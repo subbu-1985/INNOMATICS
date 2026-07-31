@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tripzen</title>
+    <style>
+        .header-right{
+            display:flex;
+            align-items:center;
+            gap:12px;
+        }
+        .hdr-avatar{
+            width:40px;
+            height:40px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #ff6b4a, #0f4c81);
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            font-size:1.1rem;
+            color:#fff;
+            text-decoration:none;
+            border:2px solid rgba(255,107,74,0.5);
+            transition: transform 0.2s,box-shadow 0.2s;
+            flex-shrink:0;
+        }
+        .hdr-avatar:hover{
+            transform:scale(1.08);
+            box-shadow:0 4px 16px rgba(255, 107, 74, 0.4);
+            border-color:#ff6b4a;
+        }
+        .hdr-avatar-icon{
+            line-height:1;
+        }
+        .hdr-profile-dropdown{
+            position:absolute;
+            top:calc(100% + 10px);
+            right:0;
+            background:#fff;
+            border-radius:14px;
+            box-shadow: 0 20px 50px rgba(15, 30, 60, 0.22);
+            width: 240px;
+            z-index: 500;
+            padding: 6px 0;
+            opacity: 0;
+            transform: translateY(-8px) scale(0.97);
+            pointer-events: none;
+            transition: opacity 0.22s ease, transform 0.22s ease;
+          }
+        .hdr-profile:hover .hdr-profile-dropdown,
+        .hdr-profile:focus-within .hdr-profile-dropdown{
+            opacity:1;
+            transform:translateY(0) scale(1);
+            pointer-events:auto;
+        }
+        .hpd-head{
+            display:flex;
+            align-items:center;
+            gap:12px;
+            padding:14px 16px;
+        }
+        .hpd-avatar-lg {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #ff6b4a, #0f4c81);
+            color: #fff;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        .hpd-name{
+            font-weight:700;
+            font-size:0.9rem;
+            color:#16213e;
+        }
+        .hpd-sub{
+            font-size:0.75rem;
+            color:#6b7280;
+        }
+        .hdp-divider{
+            height:1px;
+            background:#f3f4f6;
+            margin:4px 0;
+        }
+        .hpd-item{
+            display:block;
+            padding:10px 16px;
+            font-size:0.87rem;
+            color:#374151;
+            text-decoration:none;
+            transition:background 0.15s color 0.15s;
+        }
+        .hpd-item:hover{
+            background:#faf6ee;
+            color:#ff6b4a;
+        }
+        .hpd-item:hover{
+            background:#faf6ee;
+            color:#ff6b4a;
+        }
+        .hpd-logout{
+            color:#ef4444 important;
+        }
+        .hpd-logout:hover{
+            background:#fff5f5 !important;
+            color:#dc2626 !important;
+        }
+      
+    </style>
+</head>
+<body>
+        <!-- <header class="site-header">
+            <div class="container">
+                <a href="index.html" class="logo">Trip<span>Zen</span></a>
+                <nav class="main">
+                    <ul>
+                        <li><a herf="about.html">About</a></li>
+                        <li><a herf="contact.html"></a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header-right">
+                    <div class="hdr-profile" id="hdrprofile">
+                        <a href="profile.html" class="hdr-avatar" aria-lable="My Profile" title="My Profile">
+                            <span class="hdr-avatar-icon">&#128100;</span>
+                        </a>
+                        <div class="hdr-profile-dropdown">
+                            <div class="hpd-head">
+                                <div class="hpd-avatar-lg">&#128100;</div>
+                            </div>
+                            <div class="hpd-name">My Account</div>
+                            <div class="hpd-sub">Manage your profile</div>
+                        </div>
+                    </div>
+                    <div class="hpd-divider"></div>
+                    <a href="profile.html" class="hpd-item">&#128100; My Profile</a>
+                    <a href="my-bookings.html" class="hpd-item">&#128203; My Bookings</a>
+                    <a href="contact.html" class="hpd-item">&#128222; Contact Support</a>
+                    <div class="hpd-divider"></div>
+                    <a href="login.html" class="hpd-item hpd-logout">&#128682; Logout</a>
+                     </div>
+                </div>
+                <a href="login-drawer" class="btn nav-cta" id="openLoginBtn" aria-label="Open Login">Login</a>
+            </div>
+        </header>
+ 
+       
+        <section class="Hero">
+            <div class="container">
+                <span class="eyebrow">Bording Pass . Flights . Stays . Packages</span>
+                <h1>Travel beyond your dreams.</h1>
+                <p class="lead">One search. Three ways to get there. Tripzen bundles flignts,
+                    and holiday packages into a single, no-fuss booking flow.
+                </p>
+                <div class="actions">
+                    
+                </div>
+            </div>
+        </section> -->
+     <header class="site-header">
+    <div class="container nav-row">
+      <a href="index.html" class="logo">Trip<span>Zen</span></a>
+
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="my-bookings.html">My Bookings</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header right: Profile avatar + Login -->
+      <div class="header-right">
+
+        <!-- Profile avatar icon with CSS-only dropdown -->
+        <div class="hdr-profile" id="hdrProfile">
+          <a href="profile.html" class="hdr-avatar" aria-label="My Profile" title="My Profile">
+            <span class="hdr-avatar-icon">&#128100;</span>
+          </a>
+          <!-- Dropdown shows on hover -->
+          <div class="hdr-profile-dropdown">
+            <div class="hpd-head">
+              <div class="hpd-avatar-lg">&#128100;</div>
+              <div>
+                <div class="hpd-name">My Account</div>
+                <div class="hpd-sub">Manage your profile</div>
+              </div>
+            </div>
+            <div class="hpd-divider"></div>
+            <a href="profile.html" class="hpd-item">&#128100; My Profile</a>
+            <a href="my-bookings.html" class="hpd-item">&#128203; My Bookings</a>
+            <a href="contact.html" class="hpd-item">&#128222; Contact Support</a>
+            <div class="hpd-divider"></div>
+            <a href="login.html" class="hpd-item hpd-logout">&#128682; Logout</a>
+          </div>
+        </div>
+
+        <a href="#login-drawer" class="btn nav-cta" id="openLoginBtn" aria-label="Open Login">Login</a>
+      </div>
+    </div>
+  </header>
+  <section class="hero-mmt">
+    <div class="container">
+        <h1>Let's plan your next adventure</h1>
+        <p>Book Flights, hotels, and holidays packges at the lowest price</p>
+    </div>
+  </section>
+  <div class="container" style="position:relative;">
+    <div class="search-widget-container">
+        <!-- Sub tabs (flights, hotels, bus, packages) mapping to their pages -->
+         
+    </div>
+  </div>
+</body>
+</html>

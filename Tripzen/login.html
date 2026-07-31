@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tripzen | Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        body{
+            font-family:'Inter',sans-serif;
+            background-color: linear-gradient(135deg,#0f4c81,#3ea6ff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .login-container{
+            width:420px;
+            background:#fff;
+            padding:40px;
+            border-radius:18px;
+            box-shadow:0 15px 35px rgba(0,0,0,.25);
+        }
+        .logo{
+            text-align:center;
+            font-size:40px;
+            font-family:'Fraunces',serif;
+            margin-bottom:10px;
+        }
+        .logo span{
+            color:#0f4c81;
+        }
+        .title{
+            text-align:center;
+            font-size:28px;
+            font-family:'Fraunces',serief;
+            margin-bottom:10px;
+        }
+        .subtitle{
+            text-align:center;
+            color:#666;
+            margin-bottom:30px;
+        }
+        label{
+            display:block;
+            font-weight:600;
+            margin-bottom:8px;
+        }
+        input{
+            width:100%;
+            padding:14px;
+            border:1px solid #ccc;
+            border-radius:8px;
+            margin-bottom:20px;
+            font-size:15px;
+        }
+        input:focus{
+            border-color:#0f4c81;
+            outline:none;
+        }
+        .row{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            margin-bottom:20px;
+            font-size:14px;
+        }
+        .row a{
+            text-decoration:none;
+            color:#0f4c81;
+        }
+        .btn{
+            width:100%;
+            padding:15px;
+            background-color: #0f4c81;
+            color:white;
+            border:none;
+            border-radius:8px;
+            cursor:pointer;
+            font-size:17px;
+            font-weight:bold;
+        }
+        .btn:hover{
+            background: #08335d;
+        }
+        .signup{
+            text-align:center;
+            margin-top:25px;
+        }
+        .signup a{
+            text-decoration:none;
+            color:#0f4c81;
+            font-weight:bold;
+        }
+        .home{
+            text-align:center;
+            margin-top:20px;
+        }
+        .home a{
+            text-decoration:none;
+            color:#555;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo">
+            Trip<span>Zen</span>
+        </div>
+        <h2 class="title">Welcome </h2>
+        <p class="subtitle">Login to continue your journey</p>
+        <form action="index.html" method="get">
+            <label>Email Address</label>
+            <input type="email" placeholder="Enter your Email" required>
+            <label>Password</label>
+            <input type="password" placeholder="Enter your Password" required>
+            <div class="row">
+                <label>
+                    <input type="checkbox">
+                    Remember Me
+                </label>
+                <a href="#">Forgot Password?</a>
+            </div>
+            <button class="btn">Login</button>
+        </form>
+        <div class="signup">
+            Don't have an account?
+            <a href="register.html">Create Account</a>
+        </div>
+        <div class="home">
+            <a href="index.html">← Back to Home</a>
+        </div>
+    </div>
+    
+</body>
+</html>

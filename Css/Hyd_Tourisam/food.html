@@ -1,0 +1,422 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Discover Hyderabad's iconic food — Hyderabadi Biryani, Haleem, Irani Chai, Osmania Biscuit, Double Ka Meetha, Kebabs and more authentic royal dishes." />
+    <title>Greater Hyderabad – Discover the City of Pearls</title>
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍖</text></svg>" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/cards.css" />
+    <link rel="stylesheet" href="css/animation.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon">
+        <img src="hydlogo.webp" alt="Hyderabad Logo" height="50" width="50">
+      </div>
+      <div class="nav-logo-text">
+        <strong>Greater Hyderabad</strong>
+        <span>City of Pearls</span>
+      </div>
+    </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="places.html">Places</a></li>
+            <li><a href="heritage.html">Heritage</a></li>
+            <li><a href="temples.html">Temples</a></li>
+            <li><a href="parks.html">Parks</a></li>
+            <li><a href="museums.html">Museums</a></li>
+            <li><a href="food.html" class="active">Food</a></li>
+            <li><a href="shopping.html">Shopping</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-cta"><a href="contact.html" class="btn btn-primary">Plan Trip</a></div>
+        <div class="nav-mobile-toggle"></div>
+    </nav>
+    <div id="top"></div>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero" style="background:linear-gradient(135deg,#5c1a00 0%,#8B3500 50%,#a05010 100%);">
+        <div class="page-hero-content">
+            <span class="page-hero-label">Royal Cuisine</span>
+            <h1 class="page-hero-title">Food &amp; Cuisine</h1>
+            <p class="page-hero-subtitle">A royal feast for the senses — the legendary tastes of Hyderabad</p>
+            <!-- <div class="breadcrumb">
+                <a href="index.html">Home</a><span>›</span>
+                <a href="places.html">Places</a><span>›</span>
+                <span>Food</span>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- FOOD INTRO -->
+    <!-- <section class="section-sm" style="background:var(--white);border-bottom:1px solid var(--border);">
+        <div class="container">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;">
+                <div>
+                    <span class="section-label">Culinary Heritage</span>
+                    <h2 style="font-family:var(--font-head);font-size:1.75rem;color:var(--dark);margin:12px 0;">The
+                        Taste of Nizam's Kitchen</h2>
+                    <p style="color:var(--gray);font-size:0.92rem;line-height:1.8;">
+                        Hyderabadi cuisine is a magnificent blend of Mughal, Turkish and Iranian flavours combined with
+                        the bold spices of South India. Slow cooking, dum technique, aromatic whole spices and fresh
+                        herbs define dishes that have been perfected over four centuries of Nizam's royal kitchens.
+                    </p>
+                </div>
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+                    <div
+                        style="background:rgba(139,0,0,0.06);border-radius:var(--radius-md);padding:20px;text-align:center;border:1px solid rgba(139,0,0,0.1);">
+                        <div style="font-size:2rem;margin-bottom:8px;">🍚</div>
+                        <div style="font-family:var(--font-head);font-size:1rem;font-weight:700;color:var(--primary);">
+                            Biryani</div>
+                        <div style="font-size:0.75rem;color:var(--gray);">World Famous</div>
+                    </div>
+                    <div
+                        style="background:rgba(139,0,0,0.06);border-radius:var(--radius-md);padding:20px;text-align:center;border:1px solid rgba(139,0,0,0.1);">
+                        <div style="font-size:2rem;margin-bottom:8px;">🥘</div>
+                        <div style="font-family:var(--font-head);font-size:1rem;font-weight:700;color:var(--primary);">
+                            Haleem</div>
+                        <div style="font-size:0.75rem;color:var(--gray);">GI Tagged</div>
+                    </div>
+                    <div
+                        style="background:rgba(139,0,0,0.06);border-radius:var(--radius-md);padding:20px;text-align:center;border:1px solid rgba(139,0,0,0.1);">
+                        <div style="font-size:2rem;margin-bottom:8px;">☕</div>
+                        <div style="font-family:var(--font-head);font-size:1rem;font-weight:700;color:var(--primary);">
+                            Irani Chai</div>
+                        <div style="font-size:0.75rem;color:var(--gray);">City's Soul</div>
+                    </div>
+                    <div
+                        style="background:rgba(139,0,0,0.06);border-radius:var(--radius-md);padding:20px;text-align:center;border:1px solid rgba(139,0,0,0.1);">
+                        <div style="font-size:2rem;margin-bottom:8px;">🍢</div>
+                        <div style="font-family:var(--font-head);font-size:1rem;font-weight:700;color:var(--primary);">
+                            Kebabs</div>
+                        <div style="font-size:0.75rem;color:var(--gray);">Royal Recipe</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- FOODS DETAIL GRID -->
+    <section class="section" style="background:var(--bg);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Must Try Dishes</span>
+                <h2 class="section-title">Iconic <span>Hyderabadi Food</span></h2>
+                <p class="section-subtitle">These legendary dishes define Hyderabad's culinary identity</p>
+                <div class="divider"></div>
+            </div>
+
+            <div class="food-detail-grid">
+
+                <!-- Biryani -->
+                <article class="food-detail-card">
+                    <div class="food-detail-img" style="background:linear-gradient(135deg,#8B0000,#c0392b);">
+                        <img src="images/food1.jpeg" alt="Hyderabadi Biryani" loading="lazy" style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius-md);">
+                    </div>
+                    <div class="food-detail-body">
+                        <div class="badge badge-primary" style="margin-bottom:8px;">Signature Dish</div>
+                        <h2 class="food-detail-name">Hyderabadi Biryani</h2>
+                        <p class="food-detail-desc">The crown jewel of Hyderabadi cuisine. Fragrant basmati rice layered
+                            with slow-marinated meat, whole spices, caramelised onions and saffron-infused milk — cooked
+                            in the legendary dum (sealed-pot) method for several hours. Available as Kacchi (raw meat)
+                            or Pakki (pre-cooked meat) style.</p>
+                        <p class="food-where">📍 Best At: Paradise, Bawarchi, Shah Ghouse, Shadab</p>
+                    </div>
+                </article>
+
+                <!-- Haleem -->
+                <article class="food-detail-card">
+                    <div class="food-detail-img" style="background:linear-gradient(135deg,#6b3a00,#8a4e00);">
+                         <img src="images/food2.jpeg" alt="Hyderabadi Haleem" loading="lazy" style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius-md);">
+                    </div>
+                    <div class="food-detail-body">
+                        <div class="badge badge-gold" style="margin-bottom:8px;">GI Certified</div>
+                        <h2 class="food-detail-name">Hyderabadi Haleem</h2>
+                        <p class="food-detail-desc">A rich, slow-cooked stew of wheat, barley, lentils and tender meat —
+                            cooked for up to 12 hours until everything blends into a thick, velvety consistency.
+                            Garnished with crispy fried onions, fresh ginger, lime and coriander. Hyderabadi Haleem
+                            holds a GI tag — a first for any meat product in India.</p>
+                        <p class="food-where">📍 Best At: Shah Ghouse, Pista House, Hotel Shadab</p>
+                    </div>
+                </article>
+
+                <!-- Irani Chai -->
+                <article class="food-detail-card">
+                    <div class="food-detail-img" style="background:linear-gradient(135deg,#4a2800,#6a3800);">
+                         <img src="images/chai.jpeg" alt="Hyderabadi Irani Chai" loading="lazy" style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius-md);">
+                    </div>
+                    <div class="food-detail-body">
+                        <div class="badge badge-accent" style="margin-bottom:8px;">City Staple</div>
+                        <h2 class="food-detail-name">Irani Chai</h2>
+                        <p class="food-detail-desc">The soul of Hyderabad — a thick, milky, sweetened tea simmered for
+                            hours in a tawa-like vessel, creating an incredibly rich and layered brew. Best enjoyed with
+                            Osmania biscuits at one of the city's traditional Irani cafes, a cultural tradition that has
+                            existed for over 150 years in the city.</p>
+                        <p class="food-where">📍 Best At: Nimrah Cafe (Charminar), Grand Hotel, Café 555</p>
+                    </div>
+                </article>
+
+                <!-- Osmania Biscuit -->
+                <article class="food-detail-card">
+                    <div class="food-detail-img" style="background:linear-gradient(135deg,#8B6000,#aa8000);">
+                         <img src="images/food4.jpeg" alt="Osmania Biscuit" loading="lazy" style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius-md);">
+                    </div>
+                    <div class="food-detail-body">
+                        <div class="badge badge-gold" style="margin-bottom:8px;">Heritage Snack</div>
+                        <h2 class="food-detail-name">Osmania Biscuit</h2>
+                        <p class="food-detail-desc">Named after the last Nizam, Mir Osman Ali Khan, this buttery,
+                            slightly sweet and salty biscuit is a Hyderabadi classic. Its crumbly, melt-in-the-mouth
+                            texture makes it the perfect companion for Irani Chai. The original recipe from the royal
+                            kitchens has been preserved for over 100 years.</p>
+                        <p class="food-where">📍 Best At: Irani cafés across the Old City</p>
+                    </div>
+                </article>
+
+                <!-- Double Ka Meetha -->
+                <article class="food-detail-card">
+                    <div class="food-detail-img" style="background:linear-gradient(135deg,#5c0080,#7a00a8);">
+                         <img src="images/food5.jpeg" alt="Double Ka Meetha" loading="lazy" style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius-md);">
+                    </div>
+                    <div class="food-detail-body">
+                        <div class="badge badge-primary" style="margin-bottom:8px;">Royal Dessert</div>
+                        <h2 class="food-detail-name">Double Ka Meetha</h2>
+                        <p class="food-detail-desc">A decadent Hyderabadi bread pudding made from deep-fried bread
+                            slices soaked in sweetened, reduced milk infused with saffron and rose water, then garnished
+                            lavishly with dry fruits, pistachios and silver leaf. A royal dessert passed down from the
+                            Nizam's court — rich, indulgent and unforgettable.</p>
+                        <p class="food-where">📍 Best At: Shadab, Baig's, Hyderabad House</p>
+                    </div>
+                </article>
+
+                <!-- Qubani Ka Meetha -->
+                <article class="food-detail-card">
+                    <div class="food-detail-img" style="background:linear-gradient(135deg,#8B0000,#a00000);">
+                         <img src="images/food6.jpeg" alt="Qubani Ka Meetha" loading="lazy" style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius-md);">
+                    </div>
+                    <div class="food-detail-body">
+                        <div class="badge badge-primary" style="margin-bottom:8px;">Festival Sweet</div>
+                        <h2 class="food-detail-name">Qubani Ka Meetha</h2>
+                        <p class="food-detail-desc">A classic Hyderabadi dessert made from dried apricots (qubani)
+                            soaked and simmered with sugar into a syrupy, jammy compote. Traditionally served at
+                            weddings and festivals, it is enjoyed warm or cold, often with a dollop of cream or custard
+                            for extra richness.</p>
+                        <p class="food-where">📍 Best At: Traditional wedding caterers, Hyderabadi restaurants</p>
+                    </div>
+                </article>
+
+                <!-- Kebabs -->
+                <article class="food-detail-card">
+                    <div class="food-detail-img" style="background:linear-gradient(135deg,#800040,#aa0060);">
+                         <img src="images/food7.jpeg" alt="Kebabs" loading="lazy" style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius-md);">
+                    </div>
+                    <div class="food-detail-body">
+                        <div class="badge badge-primary" style="margin-bottom:8px;">Classic Starter</div>
+                        <h2 class="food-detail-name">Hyderabadi Kebabs</h2>
+                        <p class="food-detail-desc">From Shami and Pathar (stone-grilled) kebabs to Boti and Seekh,
+                            Hyderabadi kebabs are a class apart. Marinated in complex spice blends and slow-cooked over
+                            charcoal, they deliver unmatched depth of flavour. The Pathar Gosht — thin meat cooked on a
+                            heated stone slab — is a Hyderabadi invention.</p>
+                        <p class="food-where">📍 Best At: Hotel Shadab, Bade Miyan, Paradise</p>
+                    </div>
+                </article>
+
+                <!-- Falooda -->
+                <article class="food-detail-card">
+                    <div class="food-detail-img" style="background:linear-gradient(135deg,#004a6e,#006090);">
+                         <img src="images/food8.jpeg" alt="Falooda & Lassi" loading="lazy" style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius-md);">
+                    </div>
+                    <div class="food-detail-body">
+                        <div class="badge badge-accent" style="margin-bottom:8px;">Summer Favourite</div>
+                        <h2 class="food-detail-name">Falooda &amp; Lassi</h2>
+                        <p class="food-detail-desc">Hyderabad's Falooda is a tall, beautiful glass layered with rose
+                            syrup, vermicelli noodles, milk, basil seeds and topped with ice cream — a refreshing treat
+                            beloved in summer. Alongside it, the rich, thick Hyderabadi Namkeen Lassi and the fruity
+                            Mango Lassi are city icons served chilled at numerous street stalls.</p>
+                        <p class="food-where">📍 Best At: Charminar area, Mozamjahi Market</p>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOD STREETS -->
+    <section class="section" style="background:var(--white);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Where To Eat</span>
+                <h2 class="section-title">Famous <span>Food Streets</span></h2>
+                <p class="section-subtitle">The best spots to experience authentic Hyderabadi street food culture</p>
+                <div class="divider"></div>
+            </div>
+
+            <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px;">
+
+                <div style="background:var(--bg);border-radius:var(--radius-lg);padding:28px;border:1px solid var(--border);text-align:center;transition:var(--transition);"
+                    class="hover-lift">
+                    <div style="font-size:2.5rem;margin-bottom:12px;">🕌</div>
+                    <h3 style="font-family:var(--font-head);font-size:1rem;color:var(--dark);margin-bottom:8px;">
+                        Charminar Food Street</h3>
+                    <p style="font-size:0.8rem;color:var(--gray);line-height:1.6;">Biryani, haleem, kebabs — the heart
+                        of Hyderabadi street food</p>
+                </div>
+
+                <div style="background:var(--bg);border-radius:var(--radius-lg);padding:28px;border:1px solid var(--border);text-align:center;transition:var(--transition);"
+                    class="hover-lift">
+                    <div style="font-size:2.5rem;margin-bottom:12px;">🌙</div>
+                    <h3 style="font-family:var(--font-head);font-size:1rem;color:var(--dark);margin-bottom:8px;">Shadab
+                        Restaurant Area</h3>
+                    <p style="font-size:0.8rem;color:var(--gray);line-height:1.6;">High Court Road — the legendary hub
+                        for authentic haleem and biryani</p>
+                </div>
+
+                <div style="background:var(--bg);border-radius:var(--radius-lg);padding:28px;border:1px solid var(--border);text-align:center;transition:var(--transition);"
+                    class="hover-lift">
+                    <div style="font-size:2.5rem;margin-bottom:12px;">🍱</div>
+                    <h3 style="font-family:var(--font-head);font-size:1rem;color:var(--dark);margin-bottom:8px;">
+                        Paradise Circle</h3>
+                    <p style="font-size:0.8rem;color:var(--gray);line-height:1.6;">Secunderabad's famous dining district
+                        anchored by the iconic Paradise Restaurant</p>
+                </div>
+
+                <div style="background:var(--bg);border-radius:var(--radius-lg);padding:28px;border:1px solid var(--border);text-align:center;transition:var(--transition);"
+                    class="hover-lift">
+                    <div style="font-size:2.5rem;margin-bottom:12px;">🍔</div>
+                    <h3 style="font-family:var(--font-head);font-size:1rem;color:var(--dark);margin-bottom:8px;">
+                        Madhapur Food Street</h3>
+                    <p style="font-size:0.8rem;color:var(--gray);line-height:1.6;">The modern HITEC City food hub with
+                        diverse cuisines and buzzing nightlife</p>
+                </div>
+
+                <div style="background:var(--bg);border-radius:var(--radius-lg);padding:28px;border:1px solid var(--border);text-align:center;transition:var(--transition);"
+                    class="hover-lift">
+                    <div style="font-size:2.5rem;margin-bottom:12px;">🌊</div>
+                    <h3 style="font-family:var(--font-head);font-size:1rem;color:var(--dark);margin-bottom:8px;">
+                        Necklace Road Eat Street</h3>
+                    <p style="font-size:0.8rem;color:var(--gray);line-height:1.6;">Lakeside food stalls by Hussain Sagar
+                        — perfect for an evening out</p>
+                </div>
+
+                <div style="background:var(--bg);border-radius:var(--radius-lg);padding:28px;border:1px solid var(--border);text-align:center;transition:var(--transition);"
+                    class="hover-lift">
+                    <div style="font-size:2.5rem;margin-bottom:12px;">🌶️</div>
+                    <h3 style="font-family:var(--font-head);font-size:1rem;color:var(--dark);margin-bottom:8px;">
+                        Tolichowki Food Street</h3>
+                    <p style="font-size:0.8rem;color:var(--gray);line-height:1.6;">Diverse cuisines, biryani joints and
+                        dessert shops in western Hyderabad</p>
+                </div>
+
+                <div style="background:var(--bg);border-radius:var(--radius-lg);padding:28px;border:1px solid var(--border);text-align:center;transition:var(--transition);"
+                    class="hover-lift">
+                    <div style="font-size:2.5rem;margin-bottom:12px;">🥗</div>
+                    <h3 style="font-family:var(--font-head);font-size:1rem;color:var(--dark);margin-bottom:8px;">Sindhi
+                        Colony Street Food</h3>
+                    <p style="font-size:0.8rem;color:var(--gray);line-height:1.6;">Chat, golgappa, fruit chaat and local
+                        snacks in Secunderabad</p>
+                </div>
+
+                <div style="background:var(--bg);border-radius:var(--radius-lg);padding:28px;border:1px solid var(--border);text-align:center;transition:var(--transition);"
+                    class="hover-lift">
+                    <div style="font-size:2.5rem;margin-bottom:12px;">🏙️</div>
+                    <h3 style="font-family:var(--font-head);font-size:1rem;color:var(--dark);margin-bottom:8px;">DLF
+                        Gachibowli Food Hub</h3>
+                    <p style="font-size:0.8rem;color:var(--gray);line-height:1.6;">Modern cafes, restaurants and food
+                        courts serving global and local cuisines</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+               <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="footer-logo-icon">
+               <img src="hydlogo.webp" alt="Hyderabad Logo" height="50" width="50">
+            </div>
+            <div class="footer-logo-text">
+              <strong>Greater Hyderabad</strong>
+              <span>City of Pearls</span>
+            </div>
+          </div>
+          <p class="footer-desc">
+            Your ultimate guide to discovering Hyderabad's rich heritage, vibrant culture,
+            amazing cuisine, and unforgettable experiences. Plan your perfect trip today.
+          </p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook">
+              <img src="images/fb.png" alt="Facebook" style="border:1px; border-radius:50%;" />
+            </a>
+            <a href="#" aria-label="Instagram">
+              <img src="images/insta.jpeg" alt="Instagram" style="border:1px; border-radius:10px;" />
+            </a>
+            <a href="#" aria-label="Twitter">
+              <img src="images/twitter.jpeg" alt="Twitter" style="border:1px; border-radius:50%;" />
+            </a>
+            <a href="#" aria-label="YouTube">
+              <img src="images/yt.png" alt="YouTube" style="border:1px; border-radius:50%;" />
+            </a>
+          </div>
+        </div>
+
+                <div>
+                    <h4 class="footer-col-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="places.html">All Places</a></li>
+                        <li><a href="food.html">Food</a></li>
+                        <li><a href="shopping.html">Shopping</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-col-title">Popular Dishes</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Hyderabadi Biryani</a></li>
+                        <li><a href="#">Haleem</a></li>
+                        <li><a href="#">Irani Chai</a></li>
+                        <li><a href="#">Double Ka Meetha</a></li>
+                        <li><a href="#">Osmania Biscuit</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-col-title">Contact</h4>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">📍</div>
+                        <p>Hyderabad, Telangana 500004</p>
+                    </div>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">✉️</div>
+                        <p>info@explorehyd.in</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="border-top:1px solid rgba(255,255,255,0.08);padding:20px 5%;">
+            <div class="footer-bottom" style="max-width:1200px;margin:0 auto;">
+                <p>© 2025 Explore Hyderabad. All rights reserved.</p>
+                <div class="footer-bottom-links"><a href="#">Privacy</a><a href="#">Terms</a></div>
+            </div>
+        </div>
+    </footer>
+
+   <a href="#top" class="back-to-top" aria-label="Back to Top">↑</a>
+</body>
+
+</html>

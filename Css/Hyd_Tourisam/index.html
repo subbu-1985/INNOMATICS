@@ -1,0 +1,808 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Explore Hyderabad – Discover the City of Pearls. Find 100+ tourist places, heritage monuments, temples, parks, food and shopping destinations in Hyderabad." />
+  <title>Greater Hyderabad – Discover the City of Pearls</title>
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏛️</text></svg>" />
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/home.css" />
+  <link rel="stylesheet" href="css/cards.css" />
+  <link rel="stylesheet" href="css/animation.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body>
+
+  <!--NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <!-- Hidden checkbox for mobile menu toggle (must come first) -->
+    <input type="checkbox" class="nav-toggle-input" id="nav-menu-toggle" aria-hidden="true">
+
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon">
+        <img src="hydlogo.webp" alt="Hyderabad Logo" height="50" width="50">
+      </div>
+      <div class="nav-logo-text">
+        <strong>Greater Hyderabad</strong>
+        <span>City of Pearls</span>
+      </div>
+    </a>
+
+    <!-- Mobile Menu Toggle (hamburger icon) -->
+    <label for="nav-menu-toggle" class="nav-mobile-toggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </label>
+
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="places.html">Places</a></li>
+      <li><a href="heritage.html">Heritage</a></li>
+      <li><a href="temples.html">Temples</a></li>
+      <li><a href="parks.html">Parks</a></li>
+      <li><a href="museums.html">Museums</a></li>
+      <li><a href="food.html">Food</a></li>
+      <li><a href="shopping.html">Shopping</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div id="top"></div>
+
+    <div class="nav-cta">
+      <a href="places.html" class="btn btn-primary">Explore Now</a>
+    </div>
+  </nav>
+
+  <!--HERO SECTION -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-circle-1">
+      <img src="logo.png" alt="Hyderabad Circle" />
+    </div>
+    <div class="hero-circle-mini">
+      <img src="images/char.png" alt="Hyderabad Circle" />
+    </div>
+    <div class="hero-circle-2"></div>
+    <div class="hero-pattern"></div>
+
+    <!-- Hero Content -->
+    <div class="hero-content">
+      <p class="hero-eyebrow">Welcome to Hyderabad</p>
+      <h1 class="hero-title">Discover the<br />City of Pearls</h1>
+      <p class="hero-title-sub">– Where History Meets Modernity –</p>
+      <p class="hero-desc">   
+        Explore 100+ breathtaking destinations across Hyderabad — from ancient
+        forts and royal palaces to serene lakes, vibrant bazaars, and world-class cuisine.
+        Your perfect journey begins here.
+      </p>
+      <div class="hero-actions">
+        <a href="places.html" class="btn btn-secondary btn-pulse">
+          🗺️ Explore Places
+        </a>
+        <a href="gallery.html" class="btn btn-white">
+          📷 View Gallery
+        </a>
+      </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="hero-stat-num">100+</div>
+        <div class="hero-stat-label">Tourist Places</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">400+</div>
+        <div class="hero-stat-label">Years of History</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">12</div>
+        <div class="hero-stat-label">Categories</div>
+      </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <!-- <div class="hero-scroll">
+      <div class="hero-scroll-dot"></div>
+      <span>Scroll</span>
+    </div> -->
+  </section>
+
+  <div class="main-bg-section">
+    <!-- EATURED DESTINATIONS -->
+    <section class="section featured" id="featured">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Top Picks</span>
+          <h2 class="section-title">Featured <span>Destinations</span></h2>
+          <p class="section-subtitle">Hand-picked iconic spots every visitor must explore in Hyderabad</p>
+          <div class="divider"></div>
+        </div>
+
+        <div class="featured-grid">
+          <!-- Card 1 -->
+          <article class="dest-card anim-fade-in-up">
+            <div class="dest-card-img" style="background:linear-gradient(135deg,#8B0000,#c0392b);">
+              <div class="dest-card-overlay"></div>
+              <img src="images/Charminar.jpg" alt="Charminar" loading="lazy"
+                style="width:100%;height:100%;object-fit:cover;display:block;">
+            </div>
+            <div class="dest-card-body">
+              <div class="dest-card-meta">
+                <span class="badge badge-primary">Heritage</span>
+                <div class="stars">★★★★★</div>
+              </div>
+              <h3 class="dest-card-name">Charminar</h3>
+              <p class="dest-card-cat">Iconic Monument · 1591 AD</p>
+              <p class="dest-card-loc">Old City, Hyderabad</p>
+              <div class="dest-card-footer">
+                <div class="stars">★★★★★ <small style="color:var(--gray)">(4.8)</small></div>
+                <a href="heritage.html" class="dest-card-link">Explore →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="dest-card anim-fade-in-up delay-100">
+            <div class="dest-card-img" style="background:linear-gradient(135deg,#5c0000,#8B0000);">
+              <div class="dest-card-overlay"></div>
+              <img src="images/golconda.jpg" alt="Golconda Fort" loading="lazy"
+                style="width:100%;height:100%;object-fit:cover;display:block;">
+            </div>
+            <div class="dest-card-body">
+              <div class="dest-card-meta">
+                <span class="badge badge-primary">Fort</span>
+                <div class="stars">★★★★★</div>
+              </div>
+              <h3 class="dest-card-name">Golconda Fort</h3>
+              <p class="dest-card-cat">Medieval Fort · 13th Century</p>
+              <p class="dest-card-loc">Ibrahim Bagh, Hyderabad</p>
+              <div class="dest-card-footer">
+                <div class="stars">★★★★★ <small style="color:var(--gray)">(4.7)</small></div>
+                <a href="heritage.html" class="dest-card-link">Explore →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="dest-card anim-fade-in-up delay-200">
+            <div class="dest-card-img" style="background:linear-gradient(135deg,#6b3a00,#8a4e00);">
+              <div class="dest-card-overlay"></div>
+              <img src="images/ramojifilmcity.webp" alt="Ramoji Film City" loading="lazy"
+                style="width:100%;height:100%;object-fit:cover;display:block;">
+            </div>
+            <div class="dest-card-body">
+              <div class="dest-card-meta">
+                <span class="badge badge-accent">Entertainment</span>
+                <div class="stars">★★★★★</div>
+              </div>
+              <h3 class="dest-card-name">Ramoji Film City</h3>
+              <p class="dest-card-cat">Film Studio · World's Largest</p>
+              <p class="dest-card-loc">Hayathnagar, Hyderabad</p>
+              <div class="dest-card-footer">
+                <div class="stars">★★★★★ <small style="color:var(--gray)">(4.6)</small></div>
+                <a href="places.html" class="dest-card-link">Explore →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="dest-card anim-fade-in-up delay-300">
+            <div class="dest-card-img" style="background:linear-gradient(135deg,#1a1a6e,#2d2d9e);">
+              <div class="dest-card-overlay"></div>
+              <img src="images/birlstemple.jpeg" alt="Birla Mandir" loading="lazy"
+                style="width:100%;height:100%;object-fit:cover;display:block;">
+            </div>
+            <div class="dest-card-body">
+              <div class="dest-card-meta">
+                <span class="badge badge-gold">Temple</span>
+                <div class="stars">★★★★★</div>
+              </div>
+              <h3 class="dest-card-name">Birla Mandir</h3>
+              <p class="dest-card-cat">White Marble Temple · 1976</p>
+              <p class="dest-card-loc">Naubath Pahad, Hyderabad</p>
+              <div class="dest-card-footer">
+                <div class="stars">★★★★★ <small style="color:var(--gray)">(4.5)</small></div>
+                <a href="temples.html" class="dest-card-link">Explore →</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div style="text-align:center;margin-top:44px;">
+          <a href="places.html" class="btn btn-outline">View All 100+ Places</a>
+        </div>
+      </div>
+    </section>
+
+    <!--WHY VISIT HYDERABAD -->
+    <section class="section why-visit" id="why-visit">
+      <div class="container">
+        <div class="why-grid">
+          <!-- Content Side -->
+          <div class="why-content">
+            <span class="section-label">Why Choose Us</span>
+            <h2 class="section-title" style="text-align:left;">Why Visit <span>Hyderabad?</span></h2>
+            <div class="divider divider-left"></div>
+            <p style="font-size:0.95rem;color:yellow; line-height:1.8;margin-top:20px;max-width:520px;">
+              Known as the "City of Pearls," Hyderabad is a mesmerizing blend of ancient traditions
+              and futuristic ambitions. From the 400-year-old Charminar to cutting-edge HITEC City,
+              every corner tells a story.
+            </p>
+
+            <div class="why-features">
+              <div class="why-feature">
+                <div class="why-feature-icon">🏛️</div>
+                <h4>Rich Heritage</h4>
+                <p>Centuries of Nizami culture preserved in forts, palaces and mosques</p>
+              </div>
+              <div class="why-feature">
+                <div class="why-feature-icon">🍖</div>
+                <h4>Iconic Cuisine</h4>
+                <p>Hyderabadi Biryani, Haleem and Irani Chai are world-famous delights</p>
+              </div>
+              <div class="why-feature">
+                <div class="why-feature-icon">🛍️</div>
+                <h4>Best Shopping</h4>
+                <p>Pearls, bangles, silk and more at legendary Laad Bazaar and beyond</p>
+              </div>
+              <div class="why-feature">
+                <div class="why-feature-icon">🌿</div>
+                <h4>Green Spaces</h4>
+                <p>Beautiful lakes, national parks and gardens spread across the city</p>
+              </div>
+            </div>
+
+            <div style="margin-top:36px;">
+              <a href="about.html" class="btn btn-primary">Learn More About Hyderabad</a>
+            </div>
+          </div>
+
+          <!-- Visual Side -->
+          <div class="why-visual">
+            <div class="why-img-grid">
+              <div class="why-img">
+                <video autoplay muted loop playsinline aria-label="Hyderabad tourism video">
+                  <source src="images/video.mp4" type="video/mp4">
+                  </video>
+              </div>
+              <div class="why-img">
+                <img src="images/img2.jpeg" alt="Image" style="height:220px;">
+              </div>
+              <div class="why-img">
+                <img src="images/img3.jpeg" alt="Image" style="height:220px;">
+              </div>
+            </div>
+            <div class="why-badge-float">
+              <strong>400+ Years</strong>
+              <span>of Rich History</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--TOP ATTRACTIONS-->
+    <section class="section attractions" id="attractions">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Must Visit</span>
+          <h2 class="section-title">Top <span>Attractions</span></h2>
+          <p class="section-subtitle">The most loved destinations among travellers visiting Hyderabad</p>
+          <div class="divider"></div>
+        </div>
+
+        <div class="attractions-grid">
+          <!-- Attraction 1 -->
+          <article class="attraction-card">
+            <div class="attraction-img">
+              <div class="attraction-img-inner"><img src="images/Charminar.jpg" alt="Charminar" loading="lazy"
+                  style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+              <div class="attraction-img-overlay"></div>
+              <span class="attraction-img-badge">★ 4.8</span>
+            </div>
+            <div class="attraction-body">
+              <h3 class="attraction-name">Charminar</h3>
+              <p class="attraction-desc">
+                Built in 1591 by Muhammad Quli Qutb Shah, Charminar is the iconic symbol of
+                Hyderabad. This magnificent mosque and monument stands at the heart of Old City,
+                drawing millions of visitors every year.
+              </p>
+              <div class="attraction-meta">
+                <span class="attraction-meta-item">⏰ 9AM–5:30PM</span>
+                <span class="attraction-meta-item">💰 ₹25 (Indian)</span>
+                <span class="attraction-meta-item">📍 Old City</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Attraction 2 -->
+          <article class="attraction-card">
+            <div class="attraction-img">
+              <div class="attraction-img-inner"><img src="images/golconda.jpg" alt="Golconda Fort" loading="lazy"
+                  style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+              <div class="attraction-img-overlay"></div>
+              <span class="attraction-img-badge">★ 4.7</span>
+            </div>
+            <div class="attraction-body">
+              <h3 class="attraction-name">Golconda Fort</h3>
+              <p class="attraction-desc">
+                A grand medieval fortress that was once the seat of the Qutb Shahi dynasty,
+                known for its legendary diamond trade, impressive acoustics and the famous
+                sound and light show held every evening.
+              </p>
+              <div class="attraction-meta">
+                <span class="attraction-meta-item">⏰ 8AM–5:30PM</span>
+                <span class="attraction-meta-item">💰 ₹25 (Indian)</span>
+                <span class="attraction-meta-item">📍 Ibrahim Bagh</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Attraction 3 -->
+          <article class="attraction-card">
+            <div class="attraction-img">
+              <div class="attraction-img-inner"><img src="images/ramojifilmcity.webp" alt="Ramoji Film City"
+                  loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+              <div class="attraction-img-overlay"></div>
+              <span class="attraction-img-badge">★ 4.6</span>
+            </div>
+            <div class="attraction-body">
+              <h3 class="attraction-name">Ramoji Film City</h3>
+              <p class="attraction-desc">
+                The world's largest integrated film studio complex, recognised by the Guinness
+                World Records. Sprawling across 2,000 acres with hotels, sets, gardens, rides
+                and daily live entertainment shows.
+              </p>
+              <div class="attraction-meta">
+                <span class="attraction-meta-item">⏰ 9AM–7PM</span>
+                <span class="attraction-meta-item">💰 ₹1150+</span>
+                <span class="attraction-meta-item">📍 Hayathnagar</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Attraction 4 -->
+          <article class="attraction-card">
+            <div class="attraction-img">
+              <div class="attraction-img-inner"><img src="images/Hussainsagar.jpg" alt="Hussain Sagar Lake"
+                  loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+              <div class="attraction-img-overlay"></div>
+              <span class="attraction-img-badge">★ 4.5</span>
+            </div>
+            <div class="attraction-body">
+              <h3 class="attraction-name">Hussain Sagar Lake</h3>
+              <p class="attraction-desc">
+                A stunning heart-shaped lake built in 1563, connecting Hyderabad and
+                Secunderabad. Famous for the 18-metre tall rock statue of the Buddha,
+                boat rides and the vibrant Necklace Road promenade.
+              </p>
+              <div class="attraction-meta">
+                <span class="attraction-meta-item">⏰ Open 24hrs</span>
+                <span class="attraction-meta-item">💰 Free Entry</span>
+                <span class="attraction-meta-item">📍 Tank Bund</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Attraction 5 -->
+          <article class="attraction-card">
+            <div class="attraction-img">
+              <div class="attraction-img-inner"><img src="images/salarjung.jpeg" alt="Salar Jung Museum" loading="lazy"
+                  style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+              <div class="attraction-img-overlay"></div>
+              <span class="attraction-img-badge">★ 4.6</span>
+            </div>
+            <div class="attraction-body">
+              <h3 class="attraction-name">Salar Jung Museum</h3>
+              <p class="attraction-desc">
+                One of the three national museums of India, housing Salar Jung III's personal
+                collection of 40,000+ rare artifacts from across the world, including the
+                famous Veiled Rebecca marble sculpture.
+              </p>
+              <div class="attraction-meta">
+                <span class="attraction-meta-item">⏰ 10AM–5PM</span>
+                <span class="attraction-meta-item">💰 ₹20 (Indian)</span>
+                <span class="attraction-meta-item">📍 Dar-ul-Shifa</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Attraction 6 -->
+          <article class="attraction-card">
+            <div class="attraction-img">
+              <div class="attraction-img-inner"><img src="images/birlstemple.jpeg" alt="Birla Mandir" loading="lazy"
+                  style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+              <div class="attraction-img-overlay"></div>
+              <span class="attraction-img-badge">★ 4.5</span>
+            </div>
+            <div class="attraction-body">
+              <h3 class="attraction-name">Birla Mandir</h3>
+              <p class="attraction-desc">
+                A pristine white marble temple dedicated to Lord Venkateswara, built on a
+                hilltop offering panoramic views of the city. The intricate carvings and
+                architecture blend North and South Indian styles magnificently.
+              </p>
+              <div class="attraction-meta">
+                <span class="attraction-meta-item">⏰ 7AM–9PM</span>
+                <span class="attraction-meta-item">💰 Free Entry</span>
+                <span class="attraction-meta-item">📍 Naubath Pahad</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div style="text-align:center;margin-top:44px;">
+          <a href="places.html" class="btn btn-primary">View All Attractions</a>
+        </div>
+      </div>
+    </section>
+
+    <!---POPULAR FOODS -->
+    <section class="section foods" id="foods">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Taste of Hyderabad</span>
+          <h2 class="section-title">Popular <span>Foods</span></h2>
+          <p class="section-subtitle">Hyderabadi cuisine — a royal legacy that tantalises every taste bud</p>
+          <div class="divider"></div>
+        </div>
+
+        <div class="foods-grid">
+          <div class="food-card">
+            <div class="food-img"><img src="images/biryani.webp" alt="Hyderabadi Biryani" loading="lazy"
+                style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+            <div class="food-body">
+              <h3 class="food-name">Hyderabadi Biryani</h3>
+              <p class="food-desc">Slow-cooked dum biryani with aromatic spices, saffron and tender meat</p>
+            </div>
+          </div>
+          <div class="food-card">
+            <div class="food-img"><img src="images/haleem.jpeg" alt="Haleem" loading="lazy"
+                style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+            <div class="food-body">
+              <h3 class="food-name">Haleem</h3>
+              <p class="food-desc">Slow-cooked wheat and meat stew — a Ramadan speciality, now year-round</p>
+            </div>
+          </div>
+          <div class="food-card">
+            <div class="food-img"><img src="images/chai.jpeg" alt="Irani Chai" loading="lazy"
+                style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+            <div class="food-body">
+              <h3 class="food-name">Irani Chai</h3>
+              <p class="food-desc">Milky tea simmered to perfection, best with Osmania biscuits</p>
+            </div>
+          </div>
+          <div class="food-card">
+            <div class="food-img"><img src="images/meetha.jpg" alt="Double Ka Meetha" loading="lazy"
+                style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+            <div class="food-body">
+              <h3 class="food-name">Double Ka Meetha</h3>
+              <p class="food-desc">Fried bread soaked in sweetened milk with saffron and dry fruits</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align:center;margin-top:40px;">
+          <a href="food.html" class="btn btn-outline">Explore All Dishes</a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- GALLERY PREVIEW -->
+  <section class="section gallery-preview" id="gallery-preview">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label" style="color:black;">Visual Journey</span>
+        <h2 class="section-title">Photo <span>Gallery</span></h2>
+        <p class="section-subtitle" style="color:blue;">A glimpse of Hyderabad's stunning beauty and vibrant culture</p>
+        <div class="divider"></div>
+      </div>
+
+      <div class="gallery-grid-preview">
+        <div class="gallery-preview-item">
+          <div class="gallery-preview-inner">🕌</div>
+          <div class="gallery-preview-overlay">
+            <img src="images/Charminar.jpg" alt="Charminar" loading="lazy">
+          </div>
+          <div class="card-caption">Charminar</div>
+        </div>
+        <div class="gallery-preview-item">
+          <div class="gallery-preview-inner">🏰</div>
+          <div class="gallery-preview-overlay">
+            <img src="images/golconda.jpg" alt="Golconda Fort" loading="lazy">
+          </div>
+          <div class="card-caption">Golconda Fort</div>
+        </div>
+        <div class="gallery-preview-item">
+          <div class="gallery-preview-inner">🛕</div>
+          <div class="gallery-preview-overlay">
+            <img src="images/birlstemple.jpeg" alt="Birla Mandir" loading="lazy">
+          </div>
+          <div class="card-caption">Birla Mandir</div>
+        </div>
+        <div class="gallery-preview-item">
+          <div class="gallery-preview-inner">🌊</div>
+          <div class="gallery-preview-overlay">
+            <img src="images/Hussainsagar.jpg" alt="Hussain Sagar" loading="lazy">
+          </div>
+          <div class="card-caption">Hussain Sagar</div>
+        </div>
+        <div class="gallery-preview-item">
+          <div class="gallery-preview-inner">🍚</div>
+          <div class="gallery-preview-overlay">
+            <img src="images/biryani.webp" alt="Hyderabadi Biryani" loading="lazy">
+          </div>
+          <div class="card-caption">Hyderabadi Biryani</div>
+        </div>
+        <div class="gallery-preview-item">
+          <div class="gallery-preview-inner">🏛️</div>
+          <div class="gallery-preview-overlay">
+            <img src="images/ChowmahallaPalace.jpg" alt="Chowmahalla Palace" loading="lazy">
+          </div>
+          <div class="card-caption">Chowmahalla Palace</div>
+        </div>
+        <div class="gallery-preview-item">
+          <div class="gallery-preview-inner">🛍️</div>
+          <div class="gallery-preview-overlay">
+            <img src="images/LaadBazaar.jpeg" alt="Laad Bazaar" loading="lazy">
+          </div>
+          <div class="card-caption">Laad Bazaar</div>
+        </div>
+      </div>
+
+      <div style="text-align:center;margin-top:36px;">
+        <a href="gallery.html" class="btn btn-primary">View Full Gallery</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Traveller Stories</span>
+        <h2 class="section-title" style="color:var(--white);">What <span style="color:var(--secondary);">Visitors
+            Say</span></h2>
+        <p class="section-subtitle" style="color:rgba(255,255,255,0.7);">Real experiences from travellers who fell in
+          love with Hyderabad</p>
+        <div class="divider"></div>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testi-card">
+          <div class="testi-quote">"</div>
+          <p class="testi-text">Hyderabad is truly magical! The Charminar at sunset is something you can never forget.
+            The biryani here is the best I've ever had — absolutely heavenly experience!</p>
+          <div class="testi-author">
+            <div class="testi-avatar">👩</div>
+            <div class="testi-info">
+              <div class="testi-name">Priya Sharma</div>
+              <div class="testi-country">🇮🇳 Mumbai, India</div>
+              <div class="stars" style="margin-top:4px;">★★★★★</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card">
+          <div class="testi-quote">"</div>
+          <p class="testi-text">I visited Ramoji Film City and it was incredible! The Golconda Fort sound and light show
+            is a must-see. Hyderabad has the perfect mix of old charm and modern life.</p>
+          <div class="testi-author">
+            <div class="testi-avatar">👨</div>
+            <div class="testi-info">
+              <div class="testi-name">Arjun Mehta</div>
+              <div class="testi-country">🇮🇳 Bangalore, India</div>
+              <div class="stars" style="margin-top:4px;">★★★★★</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card">
+          <div class="testi-quote">"</div>
+          <p class="testi-text">The Salar Jung Museum blew my mind — one of the finest art museums I've visited anywhere
+            in the world. The Nizhami architecture is simply breathtaking!</p>
+          <div class="testi-author">
+            <div class="testi-avatar">👩</div>
+            <div class="testi-info">
+              <div class="testi-name">Sarah Mitchell</div>
+              <div class="testi-country">🇬🇧 London, UK</div>
+              <div class="stars" style="margin-top:4px;">★★★★★</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card">
+          <div class="testi-quote">"</div>
+          <p class="testi-text">Shopping at Laad Bazaar for pearls and bangles was a delightful cultural experience. The
+            street food at Charminar area is out of this world. 10/10 city!</p>
+          <div class="testi-author">
+            <div class="testi-avatar">👨</div>
+            <div class="testi-info">
+              <div class="testi-name">David Chen</div>
+              <div class="testi-country">🇺🇸 California, USA</div>
+              <div class="stars" style="margin-top:4px;">★★★★★</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card">
+          <div class="testi-quote">"</div>
+          <p class="testi-text">Hussain Sagar at night with the illuminated Buddha statue is a surreal experience.
+            Hyderabad is the most underrated travel destination in South Asia!</p>
+          <div class="testi-author">
+            <div class="testi-avatar">👩</div>
+            <div class="testi-info">
+              <div class="testi-name">Aisha Rahman</div>
+              <div class="testi-country">🇦🇪 Dubai, UAE</div>
+              <div class="stars" style="margin-top:4px;">★★★★★</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card">
+          <div class="testi-quote">"</div>
+          <p class="testi-text">The Chowmahalla Palace gave me a window into royal Nizhami life. Hyderabad's warmth,
+            grandeur and flavours make it one of India's greatest cities to visit!</p>
+          <div class="testi-author">
+            <div class="testi-avatar">👨</div>
+            <div class="testi-info">
+              <div class="testi-name">Rajesh Kumar</div>
+              <div class="testi-country">🇮🇳 Chennai, India</div>
+              <div class="stars" style="margin-top:4px;">★★★★★</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="section-sm newsletter" id="newsletter">
+    <div class="container">
+      <div class="newsletter-inner">
+        <div class="newsletter-content">
+          <div class="newsletter-icon">✉️</div>
+          <h2>Stay Updated with Hyderabad</h2>
+          <p>Subscribe to receive travel tips, event updates, and exclusive guides about exploring Hyderabad's best
+            attractions.</p>
+        </div>
+        <form class="newsletter-form" onsubmit="return false;">
+          <input type="email" class="newsletter-input" id="newsletter-email" placeholder="Enter your email address..."
+            aria-label="Email for newsletter" />
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!--FOOTER-->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Column -->
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="footer-logo-icon">
+               <img src="hydlogo.webp" alt="Hyderabad Logo" height="50" width="50">
+            </div>
+            <div class="footer-logo-text">
+              <strong>Greater Hyderabad</strong>
+              <span>City of Pearls</span>
+            </div>
+          </div>
+          <p class="footer-desc">
+            Your ultimate guide to discovering Hyderabad's rich heritage, vibrant culture,
+            amazing cuisine, and unforgettable experiences. Plan your perfect trip today.
+          </p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook">
+              <img src="images/fb.png" alt="Facebook" style="border:1px; border-radius:50%;" />
+            </a>
+            <a href="#" aria-label="Instagram">
+              <img src="images/insta.jpeg" alt="Instagram" style="border:1px; border-radius:10px;" />
+            </a>
+            <a href="#" aria-label="Twitter">
+              <img src="images/twitter.jpeg" alt="Twitter" style="border:1px; border-radius:50%;" />
+            </a>
+            <a href="#" aria-label="YouTube">
+              <img src="images/yt.png" alt="YouTube" style="border:1px; border-radius:50%;" />
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="places.html">Tourist Places</a></li>
+            <li><a href="heritage.html">Heritage Sites</a></li>
+            <li><a href="temples.html">Temples</a></li>
+            <li><a href="museums.html">Museums</a></li>
+            <li><a href="gallery.html">Photo Gallery</a></li>
+            <li><a href="about.html">About Hyderabad</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Categories -->
+        <div>
+          <h4 class="footer-col-title">Categories</h4>
+          <ul class="footer-links">
+            <li><a href="heritage.html">Historical Monuments</a></li>
+            <li><a href="parks.html">Parks &amp; Gardens</a></li>
+            <li><a href="food.html">Food &amp; Cuisine</a></li>
+            <li><a href="shopping.html">Shopping Spots</a></li>
+            <li><a href="places.html">Lakes &amp; Water</a></li>
+            <li><a href="places.html">Adventure</a></li>
+            <li><a href="places.html">Weekend Getaways</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+          <h4 class="footer-col-title">Get In Touch</h4>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon">📍</div>
+            <p>GH Tourism Development Corporation, Hyderabad, TS 500004</p>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon">📞</div>
+            <p>+91-40-2345-6789<br />+91-40-9876-5432</p>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon">✉️</div>
+            <p>info@explorehyd.in</p>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon">⏰</div>
+            <p>Mon – Sat: 9:00 AM – 6:00 PM</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div style="border-top:1px solid rgba(255,255,255,0.08);padding:20px 5%;">
+      <div class="footer-bottom" style="max-width:1200px;margin:0 auto;">
+        <p>© 2026 Explore Hyderabad. All rights reserved. | Crafted with ❤️ for <a href="#">Hyderabad Tourism</a></p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <a href="#home" class="back-to-top" id="back-to-top" aria-label="Back to Top">↑</a>
+
+  <script>
+    // Rotate the visible circle image continuously.
+    const circle1Image = document.querySelector('.hero-circle-1 img');
+    const circle1RotationStart = performance.now();
+
+    function rotateCircle1(now) {
+      const degrees = ((now - circle1RotationStart) / 16000 * 360) % 360;
+      circle1Image.style.transform = `rotate(${degrees}deg)`;
+      requestAnimationFrame(rotateCircle1);
+    }
+
+    if (circle1Image) {
+      requestAnimationFrame(rotateCircle1);
+    }
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Boxes</title>
+    <style>
+        .spy{
+            height:950px;
+            width:1700px;
+            border:10px solid orange;
+            grid-template-columns:repeat(3,1fr);
+            grid-template-rows:repeat(3,1fr);
+            display:grid;
+            padding:30px;
+            gap:30px;
+        }
+        .container1{
+            height:250px;
+            width:500px;
+            border:2px solid black;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 20px;
+            display:grid;
+            padding:20px;
+            gap:20px;
+            padding-bottom: 10px;
+        }
+        .box{
+           border:2px solid orange;
+           display:flex;
+           justify-content:center;
+           align-items:center;
+           font-weight:bold;
+        }
+        .box1{
+            background-color: skyblue;
+        }
+        .box2{
+            background-color: red;
+        }
+        .box3{
+            background-color: blue;
+        }
+        .box4{
+            background-color: goldenrod;
+        }
+        .box5{
+            background-color: violet;
+        }
+        .box6{
+            background-color: aqua;
+        }
+        .container2{
+             height:250px;
+            width:500px;
+            border:2px solid black;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 20px;
+            display:grid;
+            padding:20px;
+            gap:20px;
+            padding-bottom: 10px;
+        }
+        .class{
+           border:2px solid orange;
+           display:flex;
+           justify-content:center;
+           align-items:center;
+           font-weight:bold;
+        }
+        .class1{
+            background-color: blueviolet;
+            grid-column: 1/3;
+            grid-row:1/2;
+
+        }
+        .class2{
+            background-color: olivedrab;
+            grid-row:1/3;
+        }
+        .class3{
+            background-color: orangered;
+            
+        }
+        .class4{
+            background-color: aqua;
+            
+        }
+        .container3{
+             height:250px;
+            width:500px;
+            border:2px solid black;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 20px;
+            display:grid;
+            padding:20px;
+            gap:20px;
+            grid-template-areas: 
+            "id1 id1 id1 id1"
+            "id2 id3 id3 id3"
+            "id4 id4 id4 id4";
+            padding-bottom: 10px;
+        }
+        .id{
+            border:2px solid red;
+           display:flex;
+           justify-content:center;
+           align-items:center;
+           font-weight:bold;
+        }
+        .id1{
+            background-color: blue;
+            grid-area: id1;
+
+        }
+        .id2{
+            background-color: blueviolet;
+            grid-area:id2;
+        }
+        .id3{
+            background-color: orange;
+            grid-area: id3;
+        }
+        .id4{
+            background-color: goldenrod;
+            grid-area: id4;
+        }
+        .container4{
+            height:260px;
+            width:500px;
+            border:2px solid black;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 20px;
+            display:grid;
+            padding:20px;
+            gap:20px;
+            padding-top: 20px;
+            padding-bottom: 10px;
+
+            
+        }
+        .idx{
+           border:2px solid skyblue;
+           display:flex;
+           justify-content:center;
+           align-items:center;
+           font-weight:bold;
+        }
+        .idx1{
+            background-color: aquamarine;
+            grid-column:1/3;
+        }
+        .idx2{
+            background-color: red;
+            grid-column:3/5;
+        }
+        .idx3{
+            background-color: palegoldenrod;
+        }
+        .idx4{
+            background-color: greenyellow;
+            grid-column:2/5;
+        }
+        .idx5{
+            background-color: rgb(124, 112, 218);
+            grid-column: 1/5;
+        }
+        .container5{
+            height:250px;
+            width:500px;
+            border:2px solid black;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 15px;
+            display:grid;
+            padding:20px;
+           
+            
+        }
+        .g{
+           border:2px solid rebeccapurple;
+           display:flex;
+           justify-content:center;
+           align-items:center;
+           font-weight:bold;
+           
+        }
+        .g1{
+            background-color: red;
+        }
+
+        .g2{
+            background-color: blue;
+        }
+        .g3{
+            background-color: orange;
+        }
+        .g4{
+            background-color: skyblue;
+        }
+        .g5{
+            background-color: orchid;
+        }
+        .g6{
+            background-color: yellow;
+        }
+        .g7{
+            background-color: yellowgreen;
+        }
+        .g8{
+            background-color: aliceblue;
+        }
+        .g9{
+            background-color: aqua;
+        }
+        .g10{
+            background-color: azure;
+        }
+        .g11{
+            background-color: green;
+        }
+        .g12{
+            background-color: greenyellow;
+        }
+        .g13{
+            background-color: paleturquoise;
+        }
+        .g14{
+            background-color: blueviolet;
+        }
+        .g15{
+            background-color: thistle;
+        }
+        .g16{
+            background-color: brown;
+        }
+        .g17{
+            background-color: violet;
+        }
+        .g18{
+            background-color: gold;
+        }
+        .container6{
+            height:250px;
+            width:500px;
+            border:2px solid black;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            gap: 20px;
+            display:grid;
+            padding:20px;
+        }
+        .f{
+            border:2px solid rebeccapurple;
+           display:flex;
+           justify-content:center;
+           align-items:center;
+           font-weight:bold;
+        }
+        .f1{
+            background-color: aqua;
+            grid-column:1/3;
+        }
+        .f2{
+            background-color: blue;
+        }
+        .f3{
+            background-color: orange;
+        }
+        .f4{
+            background-color: orangered;
+        }
+        .f5{
+            background-color: seagreen;
+        }
+        .f6{
+            background-color: darkcyan;
+        }
+        .f7{
+            background-color: skyblue;
+            grid-row:3/5;
+            grid-column:1/3;
+        }
+        .f8{
+            background-color: darkgreen;
+            grid-column-start:3 ;
+        }
+        .f9{
+            background-color: blueviolet;
+        }
+        .f10{
+            background-color: aquamarine;
+        }
+        .f11{
+            background-color: darkgoldenrod;
+            grid-column:1/4;
+        }
+        .f12{
+            background-color: aqua;
+        }
+        .container7{
+            height:250px;
+            width:500px;
+            border:2px solid black;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2 , 1fr);
+            gap: 20px;
+            display:grid;
+            padding:20px;
+        }
+        .h{
+            border:2px solid orangered;
+           display:flex;
+           justify-content:center;
+           align-items:center;
+           font-weight:bold;
+        }
+        .h1{
+            background-color: aqua;
+        }
+        .h2{
+            background-color: red;
+        }
+        .h3{
+            background-color: skyblue;
+        }
+        .container8{
+            height:100px;
+            width: 235px;
+            border:2px solid black;
+            margin-top: 5%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2 , 1fr);
+            gap: 10px;
+            display:grid;
+            padding:5px;
+            background-color: aquamarine;
+        }
+        .h4{
+            background-color: brown;
+            grid-column:1/3;
+        }
+        .h5{
+            background-color: blue;
+        }
+        .h6{
+            background-color: greenyellow;
+        }
+        .container9{
+            height:250px;
+            width:500px;
+            border:2px solid black;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(3 , 1fr);
+            gap: 20px;
+            display:grid;
+            padding:20px;
+        }
+        .j{
+            border:2px solid blue;
+           display:flex;
+           justify-content:center;
+           align-items:center;
+           font-weight:bold;
+        }
+        .j1{
+            background-color: red;
+        }
+        .j2{
+            background-color: aqua;
+        }
+        .j3{
+            background-color: blue;
+        }
+        .j4{
+            background-color: orange;
+        }
+        .j5{
+            background-color: green;
+        }
+        .j6{
+            background-color: peru;
+        }
+        .j7{
+            background-color: blueviolet;
+        }
+        .j8{
+            background-color: yellow;
+            grid-column:3/6;
+        }
+        .j9{
+            background-color: skyblue;
+            grid-column:1/6;
+        }
+        .container10{
+             height:250px;
+            width:500px;
+            border:2px solid black;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3 , 1fr);
+            gap: 20px;
+            display:grid;
+            padding:20px;
+        }
+        .k{
+           border:2px solid blue;
+           display:flex;
+           justify-content:center;
+           align-items:center;
+           font-weight:bold; 
+        }
+        .k1{
+            background-color: aqua;
+            grid-column:1/4;
+        }
+        .k2{
+            background-color: red;
+            grid-row:2/4;
+        }
+        .k3{
+            background-color: orange;
+            grid-column:2/4;
+        }
+        .k4{
+            background-color: skyblue;
+        }
+        .k5{
+            background-color: yellow;
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+    <div class="spy">
+        <div class="container1">
+            <div class="box box1">box1</div>
+            <div class="box box2">box2</div>
+            <div class="box box3">box3</div>
+            <div class="box box4">box4</div>
+            <div class="box box5">box5</div>
+            <div class="box box6">box6</div>
+        </div>
+        <div class="container2">
+            <div class="class class1">Hero1</div>
+            <div class="class class2">Hero2</div>
+            <div class="class class3">Hero3</div>
+            <div class="class class4">Hero4</div>
+        </div>
+        <div class="container3">
+            <div class="id id1">Karna</div>
+            <div class="id id2">Krishna</div>
+            <div class="id id3">Arjuna</div>
+            <div class="id id4">Abhimanyudu</div>
+        </div>
+        <div class="container4">
+            <div class="idx idx1">Iron Man</div>
+            <div class="idx idx2">Spider Man</div>
+            <div class="idx idx3">Doctor Strange</div>
+            <div class="idx idx4">Thor</div>
+            <div class="idx idx5">Odin</div>
+        </div>
+        <div class="container5">
+            <div class="g g1">Thanos</div>
+            <div class="g g2">Skar</div>
+            <div class="g g3">Ultron</div>
+            <div class="g g4">Kill Mongor</div>
+            <div class="g g5">Shangchi</div>
+            <div class="g g6">Mandhelin</div>
+            <div class="g g7">Redskull</div>
+            <div class="g g8">Loki</div>
+            <div class="g g9">red Jocket</div>
+            <div class="g g10">Iron Heart</div>
+            <div class="g g11">Iron Mongar</div>
+            <div class="g g12">Mistro</div>
+            <div class="g g13">Sandman</div>
+            <div class="g g14">Lizard</div>
+            <div class="g g15">Scarpion</div>
+            <div class="g g16">Volture</div>
+            <div class="g g17">Octopus</div>
+            <div class="g g18">Goblin</div>
+        </div>
+        <div class="container6">
+            <div class="f f1">India</div>
+            <div class="f f2">President</div>
+            <div class="f f3">PM</div>
+            <div class="f f4">Home Minister</div>
+            <div class="f f5">Diffence Minister</div>
+            <div class="f f6">Governors</div>
+            <div class="f f7">Speaker of LS</div>
+            <div class="f f8">CMS</div>
+            <div class="f f9">Ambassadors</div>
+            <div class="f f10">Ministers</div>
+            <div class="f f11">Chief of EC</div>
+            <div class="f f12">Army Genarals</div>
+        </div>
+        <div class="container7">
+            <div class="h h1">Andhra</div>
+            <div class="h h2">TG</div>
+            <div class="h h3">TN</div>
+            <div class="container8">
+              <div class="h h4">KL</div>
+              <div class="h h5">KN</div>
+              <div class="h h6">MR</div>
+            </div>
+        </div>
+        <div class="container9">
+            <div class="j j1">Krishna1</div>
+            <div class="j j2">karna1</div>
+            <div class="j j3">maha baratham1</div>
+            <div class="j j4">Bhishma</div>
+            <div class="j j5">Arjuna</div>
+            <div class="j j6">maha baratham2</div>
+            <div class="j j7">maha baratham3</div>
+            <div class="j j8">Gathotkaja</div>
+            <div class="j j9">Kurukshetram</div>
+        </div>  
+        <div class="container10">
+            <div class="k k1">Rama</div>
+            <div class="k k2">Sita</div>
+            <div class="k k3">Lakshman</div>
+            <div class="k k4">Hanuman</div>
+            <div class="k k5">Vibishana</div>
+        </div>                            
+    </div>
+</body>
+</html>  

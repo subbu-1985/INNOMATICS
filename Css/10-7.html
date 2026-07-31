@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage</title>
+    <style>
+        .container{
+            display:grid;
+            border: 2px solid orange;
+            height:100vh;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: 19% 62% 19%;
+            padding:20px;
+            gap:10px;
+            grid-template-areas:
+            "header header header header"
+            "sidebar main main sright"
+            "footer footer footer footer";
+        }
+        .box{
+            display:grid;
+            border:2px solid green;
+            border-radius: 10px;
+            justify-content: center;
+            align-items: center;
+            font-size: 35px;
+            font-family :'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-style: inherit;
+            font-weight: bolder
+
+        }
+        .header{
+            background-color: greenyellow;
+            grid-area:header;
+        }
+        .sidebar{
+            background-color: skyblue;
+            grid-area:sidebar;
+        }
+        .main{
+            background-color: yellow;
+            grid-area:main;
+        }
+        .sright{
+            background-color: blueviolet;
+            grid-area:sright;
+        }
+        .footer{
+            background-color: red;
+            grid-area:footer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box header">Header</div>
+        <div class="box sidebar">Sidebar</div>
+        <div class="box main">Main</div>
+        <div class="box sright">Rightbar</div>
+        <div class="box footer">Footer</div>
+    </div>
+</body>
+</html>

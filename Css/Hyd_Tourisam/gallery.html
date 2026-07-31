@@ -1,0 +1,649 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Photo Gallery â€” stunning images of Hyderabad's heritage monuments, temples, parks, lakes, food and shopping bazaars." />
+    <title>Greater Hyderabad â€“ Discover the City of Pearls</title>
+   <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📷</text></svg>" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/gallery.css" />
+    <link rel="stylesheet" href="css/animation.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+       <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon">
+        <img src="hydlogo.webp" alt="Hyderabad Logo" height="50" width="50">
+      </div>
+      <div class="nav-logo-text">
+        <strong>Greater Hyderabad</strong>
+        <span>City of Pearls</span>
+      </div>
+    </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="places.html">Places</a></li>
+            <li><a href="heritage.html">Heritage</a></li>
+            <li><a href="temples.html">Temples</a></li>
+            <li><a href="parks.html">Parks</a></li>
+            <li><a href="museums.html">Museums</a></li>
+            <li><a href="food.html">Food</a></li>
+            <li><a href="shopping.html">Shopping</a></li>
+            <li><a href="gallery.html" class="active">Gallery</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-cta"><a href="contact.html" class="btn btn-primary">Plan Trip</a></div>
+        <div class="nav-mobile-toggle"><span></span><span></span><span></span></div>
+    </nav>
+    <div id="top"></div>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <span class="page-hero-label">50+ Moments</span>
+            <h1 class="page-hero-title">Photo Gallery</h1>
+            <p class="page-hero-subtitle">A visual celebration of Hyderabad's beauty, culture and charm</p>
+        </div>
+    </section>
+
+    <!-- GALLERY STATS -->
+    <!-- <section class="section-sm" style="background:var(--white);">
+        <div class="container">
+            <div class="gallery-stats">
+                <div class="gallery-stat">
+                    <span class="gallery-stat-num">50+</span>
+                    <span class="gallery-stat-label">Photos</span>
+                </div>
+                <div class="gallery-stat">
+                    <span class="gallery-stat-num">8</span>
+                    <span class="gallery-stat-label">Categories</span>
+                </div>
+                <div class="gallery-stat">
+                    <span class="gallery-stat-num">100+</span>
+                    <span class="gallery-stat-label">Destinations</span>
+                </div>
+                <div class="gallery-stat">
+                    <span class="gallery-stat-num">400+</span>
+                    <span class="gallery-stat-label">Years of History</span>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- GALLERY SECTION -->
+    <section class="section" style="background:var(--bg);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Visual Journey</span>
+                <h2 class="section-title">Explore <span>Through Photos</span></h2>
+                <p class="section-subtitle">Browse Hyderabad's iconic landmarks, vibrant culture and stunning landscapes
+                </p>
+                <div class="divider"></div>
+            </div>
+
+            <!-- Hidden radio inputs that power the CSS-only filter -->
+            <input type="radio" name="gallery-filter" id="filter-all" class="gallery-filter-radio" checked>
+            <input type="radio" name="gallery-filter" id="filter-heritage" class="gallery-filter-radio">
+            <input type="radio" name="gallery-filter" id="filter-temples" class="gallery-filter-radio">
+            <input type="radio" name="gallery-filter" id="filter-parks" class="gallery-filter-radio">
+            <input type="radio" name="gallery-filter" id="filter-lakes" class="gallery-filter-radio">
+            <input type="radio" name="gallery-filter" id="filter-food" class="gallery-filter-radio">
+            <input type="radio" name="gallery-filter" id="filter-shopping" class="gallery-filter-radio">
+            <input type="radio" name="gallery-filter" id="filter-modern" class="gallery-filter-radio">
+
+            <!-- Filter Buttons (now <label>s tied to the radios above) -->
+            <div class="gallery-filters">
+                <label for="filter-all" class="gallery-filter-btn">All</label>
+                <label for="filter-heritage" class="gallery-filter-btn">Heritage</label>
+                <label for="filter-temples" class="gallery-filter-btn">Temples</label>
+                <label for="filter-parks" class="gallery-filter-btn">Parks</label>
+                <label for="filter-lakes" class="gallery-filter-btn">Lakes</label>
+                <label for="filter-food" class="gallery-filter-btn">Food</label>
+                <label for="filter-shopping" class="gallery-filter-btn">Shopping</label>
+                <label for="filter-modern" class="gallery-filter-btn">Modern City</label>
+            </div>
+
+            <!-- MASONRY GALLERY GRID -->
+            <div class="gallery-masonry">
+
+                <!-- Heritage -->
+                <div class="gallery-item large" data-category="heritage">
+                    <div class="gallery-item-inner">
+                        <img src="images/Charminar.jpg" alt="Charminar" loading="lazy">
+                    </div>
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-overlay-title">Charminar</div>
+                        <div class="gallery-item-overlay-cat">Heritage</div>
+                        <div class="gallery-zoom-icon"></div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="heritage">
+                    <div class="gallery-item-inner">
+                        <img src="images/golconda.jpg" alt="Golconda Fort" loading="lazy">
+                    </div>
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-overlay-title">Golconda Fort</div>
+                        <div class="gallery-item-overlay-cat">Heritage</div>
+                        <div class="gallery-zoom-icon"></div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="heritage">
+                    <div class="gallery-item-inner">
+                        <img src="images/ChowmahallaPalace.jpg" alt="Chowmahalla Palace" loading="lazy">
+                    </div>
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-overlay-title">Chowmahalla Palace</div>
+                        <div class="gallery-item-overlay-cat">Heritage</div>
+                        <div class="gallery-zoom-icon"></div>
+                    </div>
+                </div>
+
+                <div class="gallery-item tall" data-category="heritage">
+                    <div class="gallery-item-inner">
+                        <img src="images/Qutb.jpg" alt="Qutb Shahi Tombs" loading="lazy">
+                    </div>
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-overlay-title">Qutb Shahi Tombs</div>
+                        <div class="gallery-item-overlay-cat">Heritage</div>
+                        <div class="gallery-zoom-icon"></div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="heritage">
+                    <div class="gallery-item-inner">
+                        <img src="images/Mecca%20Masjid.jpeg" alt="Mecca Masjid" loading="lazy">
+                    </div>
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-overlay-title">Mecca Masjid</div>
+                        <div class="gallery-item-overlay-cat">Heritage</div>
+                        <div class="gallery-zoom-icon"></div>
+                    </div>
+                </div>
+
+                <!-- Temples -->
+                <div class="gallery-item wide" data-category="temples">
+                    <div class="gallery-item-inner">
+                        <img src="images/birlstemple.jpeg" alt="Birla Mandir" loading="lazy">
+                    </div>
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-overlay-title">Birla Mandir</div>
+                        <div class="gallery-item-overlay-cat">Temple</div>
+                        <div class="gallery-zoom-icon"></div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="temples">
+                    <div class="gallery-item-inner">
+                        <img src="images/keesaraguttatemple.jpeg" alt="Keesaragutta Temple" loading="lazy">
+                    </div>
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-overlay-title">Keesaragutta Temple</div>
+                        <div class="gallery-item-overlay-cat">Temple</div>
+                        <div class="gallery-zoom-icon"></div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="temples">
+                    <div class="gallery-item-inner">
+                        <img src="images/peddammatemple.jpeg" alt="Peddamma Temple" loading="lazy">
+                    </div>
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-overlay-title">Peddamma Temple</div>
+                        <div class="gallery-item-overlay-cat">Temple</div>
+                        <div class="gallery-zoom-icon"></div>
+                    </div>
+                </div>
+
+                <div class="gallery-item tall" data-category="temples">
+                    <div class="gallery-item-inner">
+                        <img src="images/iscontemple.jpg" alt="ISKCON Hyderabad" loading="lazy">
+                    </div>
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-overlay-title">ISKCON Hyderabad</div>
+                        <div class="gallery-item-overlay-cat">Temple</div>
+                        <div class="gallery-zoom-icon"></div>
+                    </div>
+                </div>
+
+                <!-- Lakes -->
+                <div class="gallery-item large" data-category="lakes">
+                    <div class="gallery-item-inner">
+                        <img src="images/Hussainsagar.jpg" alt="Hussain Sagar Lake" loading="lazy">
+                    </div>
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-overlay-title">Hussain Sagar Lake</div>
+                        <div class="gallery-item-overlay-cat">Lake</div>
+                        <div class="gallery-zoom-icon"></div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="lakes">
+                    <div class="gallery-item-inner">
+                        <img src="images/Durgam.jpg" alt="Durgam Cheruvu" loading="lazy">
+                    </div>
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-overlay-title">Durgam Cheruvu</div>
+                        <div class="gallery-item-overlay-cat">Lake</div>
+                        <div class="gallery-zoom-icon"></div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="lakes">
+                    <div class="gallery-item-inner">
+                        <img src="images/Osmansagar.jpg" alt="Osman Sagar" loading="lazy">
+                    </div>
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-overlay-title">Osman Sagar</div>
+                        <div class="gallery-item-overlay-cat">Lake</div>
+                        <div class="gallery-zoom-icon"></div>
+                    </div>
+                </div>
+
+                <!-- Parks & Nature -->
+                <div class="gallery-item" data-category="parks">
+                    <div class="gallery-item-inner">
+                        <img src="images/kbnpark.jpeg" alt="KBR National Park" loading="lazy">
+                    </div>
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-overlay-title">KBR National Park</div>
+                        <div class="gallery-item-overlay-cat">Park</div>
+                        <div class="gallery-zoom-icon"></div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="parks">
+                    <div class="gallery-item-inner">
+                        <img src="images/lumbdipark.jpeg" alt="Lumbini Park" loading="lazy">
+                    </div>
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-overlay-title">Lumbini Park</div>
+                        <div class="gallery-item-overlay-cat">Park</div>
+                        <div class="gallery-zoom-icon"></div>
+                    </div>
+                </div>
+
+                <div class="gallery-item wide" data-category="parks">
+                    <div class="gallery-item-inner">
+                        <img src="images/publicgardens.jpeg" alt="Botanical Garden" loading="lazy">
+                    </div>
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-overlay-title">Botanical Garden</div>
+                        <div class="gallery-item-overlay-cat">Garden</div>
+                        <div class="gallery-zoom-icon"></div>
+                    </div>
+                </div>
+
+                <div class="gallery-item tall" data-category="parks">
+                    <div class="gallery-item-inner">
+                        <img src="images/Mrugavani.jpeg" alt="Mrugavani Park" loading="lazy">
+                    </div>
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-overlay-title">Mrugavani Park</div>
+                        <div class="gallery-item-overlay-cat">Wildlife</div>
+                        <div class="gallery-zoom-icon"></div>
+                    </div>
+                </div>
+
+                <!-- Food -->
+                <div class="gallery-item" data-category="food">
+                    <div class="gallery-item-inner">
+                        <img src="images/biryani.webp" alt="Hyderabadi Biryani" loading="lazy">
+                    </div>
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-overlay-title">Hyderabadi Biryani</div>
+                        <div class="gallery-item-overlay-cat">Food</div>
+                        <div class="gallery-zoom-icon"></div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="food">
+                    <div class="gallery-item-inner">
+                        <img src="images/haleem.jpeg" alt="Haleem" loading="lazy">
+                    </div>
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-overlay-title">Haleem</div>
+                        <div class="gallery-item-overlay-cat">Food</div>
+                        <div class="gallery-zoom-icon"></div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="food">
+                    <div class="gallery-item-inner">
+                        <img src="images/chai.jpeg" alt="Irani Chai" loading="lazy">
+                    </div>
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-overlay-title">Irani Chai</div>
+                        <div class="gallery-item-overlay-cat">Food</div>
+                        <div class="gallery-zoom-icon"></div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="food">
+                    <div class="gallery-item-inner">
+                        <img src="images/kabab.jpeg" alt="Kebabs" loading="lazy">
+                    </div>
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-overlay-title">Hyderabadi Kebabs</div>
+                        <div class="gallery-item-overlay-cat">Food</div>
+                        <div class="gallery-zoom-icon"></div>
+                    </div>
+                </div>
+
+                <!-- Shopping -->
+                <div class="gallery-item wide" data-category="shopping">
+                    <div class="gallery-item-inner">
+                        <img src="images/LaadBazaar.jpeg" alt="Laad Bazaar" loading="lazy">
+                    </div>
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-overlay-title">Laad Bazaar</div>
+                        <div class="gallery-item-overlay-cat">Shopping</div>
+                        <div class="gallery-zoom-icon"></div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="shopping">
+                    <div class="gallery-item-inner">
+                        <img src="images/kotisultanbazaar.jpeg" alt="Pearl Market" loading="lazy">
+                    </div>
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-overlay-title">Pearl Market</div>
+                        <div class="gallery-item-overlay-cat">Shopping</div>
+                        <div class="gallery-zoom-icon"></div>
+                    </div>
+                </div>
+
+                <div class="gallery-item tall" data-category="shopping">
+                    <div class="gallery-item-inner">
+                        <img src="images/sultanbazar.webp" alt="Begum Bazaar" loading="lazy">
+                    </div>
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-overlay-title">Begum Bazaar</div>
+                        <div class="gallery-item-overlay-cat">Shopping</div>
+                        <div class="gallery-zoom-icon"></div>
+                    </div>
+                </div>
+
+                <!-- Modern City -->
+                <div class="gallery-item" data-category="lakes">
+                    <div class="gallery-item-inner">
+                        <img src="images/DurgamCheruvu.jpg" alt="Durgam Cheruvu Bridge" loading="lazy">
+                    </div>
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-overlay-title">Durgam Cheruvu Bridge</div>
+                        <div class="gallery-item-overlay-cat">Modern</div>
+                        <div class="gallery-zoom-icon"></div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="modern">
+                    <div class="gallery-item-inner">
+                        <img src="images/techhub.jpg" alt="HITEC City Skyline" loading="lazy">
+                    </div>
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-overlay-title">HITEC City Skyline</div>
+                        <div class="gallery-item-overlay-cat">Modern</div>
+                        <div class="gallery-zoom-icon"></div>
+                    </div>
+                </div>
+
+                <div class="gallery-item large" data-category="modern">
+                    <div class="gallery-item-inner">
+                        <img src="images/metro.jpeg" alt="Hyderabad Metro" loading="lazy">
+                    </div>
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-overlay-title">Hyderabad Metro</div>
+                        <div class="gallery-item-overlay-cat">Modern</div>
+                        <div class="gallery-zoom-icon"></div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="modern">
+                    <div class="gallery-item-inner">
+                        <img src="images/ramojifilmcity.webp" alt="Ramoji Film City" loading="lazy">
+                    </div>
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-overlay-title">Ramoji Film City</div>
+                        <div class="gallery-item-overlay-cat">Entertainment</div>
+                        <div class="gallery-zoom-icon"></div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="parks">
+                    <div class="gallery-item-inner">
+                        <img src="images/NehruPark.jpeg" alt="Nehru Zoo" loading="lazy">
+                    </div>
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-overlay-title">Nehru Zoo</div>
+                        <div class="gallery-item-overlay-cat">Wildlife</div>
+                        <div class="gallery-zoom-icon"></div>
+                    </div>
+                </div>
+
+                <div class="gallery-item tall" data-category="modern">
+                    <div class="gallery-item-inner">
+                        <img src="images/BirlaPlanetarium.jpeg" alt="Birla Planetarium" loading="lazy">
+                    </div>
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-overlay-title">Birla Planetarium</div>
+                        <div class="gallery-item-overlay-cat">Museum</div>
+                        <div class="gallery-zoom-icon"></div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="modern">
+                    <div class="gallery-item-inner">
+                        <img src="images/Shilparamam.jpeg" alt="Shilparamam" loading="lazy">
+                    </div>
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-overlay-title">Shilparamam</div>
+                        <div class="gallery-item-overlay-cat">Culture</div>
+                        <div class="gallery-zoom-icon"></div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="modern">
+                    <div class="gallery-item-inner">
+                        <img src="images/PaigahMuseum.jpeg" alt="Sudha Cars Museum" loading="lazy">
+                    </div>
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-overlay-title">Sudha Cars Museum</div>
+                        <div class="gallery-item-overlay-cat">Museum</div>
+                        <div class="gallery-zoom-icon"></div>
+                    </div>
+                </div>
+
+                <div class="gallery-item wide" data-category="modern">
+                    <div class="gallery-item-inner">
+                        <img src="images/NizamsMuseum.jpeg" alt="Nizam's Museum" loading="lazy">
+                    </div>
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-overlay-title">Nizam's Museum</div>
+                        <div class="gallery-item-overlay-cat">Museum</div>
+                        <div class="gallery-zoom-icon"></div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="parks">
+                    <div class="gallery-item-inner">
+                        <img src="images/ananthagirihill.webp" alt="Ananthagiri Hills" loading="lazy">
+                    </div>
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-overlay-title">Ananthagiri Hills</div>
+                        <div class="gallery-item-overlay-cat">Nature</div>
+                        <div class="gallery-zoom-icon"></div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="modern">
+                    <div class="gallery-item-inner">
+                        <img src="images/wonderla.jpeg" alt="Wonderla" loading="lazy">
+                    </div>
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-overlay-title">Wonderla</div>
+                        <div class="gallery-item-overlay-cat">Adventure</div>
+                        <div class="gallery-zoom-icon"></div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="parks">
+                    <div class="gallery-item-inner">
+                        <img src="images/publicgardens.jpeg" alt="Public Gardens" loading="lazy">
+                    </div>
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-overlay-title">Public Gardens</div>
+                        <div class="gallery-item-overlay-cat">Park</div>
+                        <div class="gallery-zoom-icon"></div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="modern">
+                    <div class="gallery-item-inner">
+                        <img src="images/salarjung.jpeg" alt="Salar Jung Museum" loading="lazy">
+                    </div>
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-overlay-title">Salar Jung Museum</div>
+                        <div class="gallery-item-overlay-cat">Museum</div>
+                        <div class="gallery-zoom-icon"></div>
+                    </div>
+                </div>
+
+                <!-- Images from images/ folder -->
+                <div class="gallery-item" data-category="heritage">
+                    <div class="gallery-item-inner">
+                        <img src="images/kotiresidency.avif" alt="Koti Residency" loading="lazy">
+                    </div>
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-overlay-title">Koti Residency</div>
+                        <div class="gallery-item-overlay-cat">Heritage</div>
+                        <div class="gallery-zoom-icon"></div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="lakes">
+                    <div class="gallery-item-inner">
+                        <img src="images/saroornagarlake.avif" alt="Saroornagar Lake" loading="lazy">
+                    </div>
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-overlay-title">Saroornagar Lake</div>
+                        <div class="gallery-item-overlay-cat">Lake</div>
+                        <div class="gallery-zoom-icon"></div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="lakes">
+                    <div class="gallery-item-inner">
+                        <img src="images/shamirpetlake.avif" alt="Shamirpet Lake" loading="lazy">
+                    </div>
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-overlay-title">Shamirpet Lake</div>
+                        <div class="gallery-item-overlay-cat">Lake</div>
+                        <div class="gallery-zoom-icon"></div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="modern">
+                    <div class="gallery-item-inner">
+                        <img src="images/snowworld.avif" alt="Snow World" loading="lazy">
+                    </div>
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-overlay-title">Snow World</div>
+                        <div class="gallery-item-overlay-cat">Entertainment</div>
+                        <div class="gallery-zoom-icon"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="footer-logo-icon">
+               <img src="hydlogo.webp" alt="Hyderabad Logo" height="50" width="50">
+            </div>
+            <div class="footer-logo-text">
+              <strong>Greater Hyderabad</strong>
+              <span>City of Pearls</span>
+            </div>
+          </div>
+          <p class="footer-desc">
+            Your ultimate guide to discovering Hyderabad's rich heritage, vibrant culture,
+            amazing cuisine, and unforgettable experiences. Plan your perfect trip today.
+          </p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook">
+              <img src="images/fb.png" alt="Facebook" style="border:1px; border-radius:50%;" />
+            </a>
+            <a href="#" aria-label="Instagram">
+              <img src="images/insta.jpeg" alt="Instagram" style="border:1px; border-radius:10px;" />
+            </a>
+            <a href="#" aria-label="Twitter">
+              <img src="images/twitter.jpeg" alt="Twitter" style="border:1px; border-radius:50%;" />
+            </a>
+            <a href="#" aria-label="YouTube">
+              <img src="images/yt.png" alt="YouTube" style="border:1px; border-radius:50%;" />
+            </a>
+          </div>
+        </div>
+
+                <div>
+                    <h4 class="footer-col-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="places.html">All Places</a></li>
+                        <li><a href="heritage.html">Heritage</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-col-title">Gallery Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Heritage Photos</a></li>
+                        <li><a href="#">Temple Images</a></li>
+                        <li><a href="#">Nature &amp; Parks</a></li>
+                        <li><a href="#">Food Photos</a></li>
+                        <li><a href="#">Modern City</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-col-title">Contact</h4>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">📍</div>
+                        <p>Hyderabad, Telangana 500004</p>
+                    </div>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">✉️</div>
+                        <p>info@explorehyd.in</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="border-top:1px solid rgba(255,255,255,0.08);padding:20px 5%;">
+            <div class="footer-bottom" style="max-width:1200px;margin:0 auto;">
+                <p>© 2025 Explore Hyderabad. All rights reserved.</p>
+                <div class="footer-bottom-links"><a href="#">Privacy</a><a href="#">Terms</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#top" class="back-to-top" aria-label="Back to Top">↑</a>
+
+</body>
+</html>

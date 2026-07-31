@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>☀️SriCity</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        body{
+            background-image: linear-gradient(
+              rgb(27, 117, 50),
+              rgb(53, 53, 147),
+              rgb(8, 8, 78)
+            );
+        }
+        .container{
+            display:grid;
+            height:1200px;
+            width:100%;
+            grid-template-columns:repeat(7,1fr);
+            grid-template-rows:60px auto 60px;
+            gap:20px;
+        }
+        .header{
+            background-color:rgba(225, 162, 120, 0.25);
+            border-radius:15px;
+            grid-column:1/8;
+            grid-row:1/2;
+            display:flex;
+            justify-content:space-between;
+            align-items: center;
+            color:skyblue;
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .header input {
+        background-color: rgba(42, 38, 38, 0.614);
+        width: 550px;
+        height: 40px;
+        border-radius: 15px;
+      }
+      #img1 {
+        margin-left: 10px;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+      }
+      .header h2{
+        margin-left: 20px;
+        font-size:30px;
+        font-family:sans-serif;
+      }
+      .main{
+        display:grid;
+        grid-column:1/8;
+        grid-row:2/3;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        gap: 20px;
+      }
+      .side{
+        background-color: rgb(29, 29, 29);
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:start;
+        color:white;
+        grid-column: 1/3;
+        grid-row:1/6;
+        border-radius:15px;
+        margin-left:10px;
+        margin-bottom:10px;
+      }
+      .side h3{
+        margin-right:300px;
+        font-size:25px;
+        margin-top:20px;
+      }
+      .side ul{
+        width:90%;
+      }
+      .side ul li{
+        list-style:none;
+        width:100%;
+        background-color:rgb(52, 51, 51);
+        margin-top:50px;
+        margin-bottom:10px;
+        padding:15px;
+        cursor:pointer;
+        border-radius:15px;
+      }
+      .section{
+        display:grid;
+        grid-template-columns:repeat(5,1fr);
+        grid-column:3/8;
+        grid-template-rows:repeat(5,1fr);
+        grid-row:1/6;
+        gap:20px;
+      }
+      .welcome{
+        grid-column:1/4;
+        grid-row:1/3;
+        color:white;
+        background-image: linear-gradient(to right, blue, rgb(42, 26, 102));
+        border-radius:15px;
+        display:flex;
+        flex-direction:column;
+        justify-content:start;
+        align-items:start;
+        line-height:30px;
+      }
+      .welcome h2{
+        margin-top:40px;
+        margin-left:20px;
+        font-size:30px;
+        font-family:cursive;
+        font-weight:bold;
+      }
+      .welcome p{
+        margin-left:20px;
+        font-size:20px;
+        margin-top:10px;
+      }
+      #btn1{
+        margin-left:20px;
+        margin-top:10px;
+        height:35px;
+        width:150px;
+        border-radius:8px;
+        background-color: rgb(29, 29, 29);
+        color:white;
+        font-size:20px;
+      }
+      .weather{
+        grid-column:4/6;
+        grid-row:1/2;
+        background-color: #222;
+        border-radius:10px;
+        color: white;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        margin-right:20px;
+        margin-bottom:10px;
+        padding:10px;
+      }
+      .today{
+        grid-column:4/6;
+        grid-row:2/3;
+        background-color: #222;
+        border-radius:10px;
+        color:white;
+        margin-right:20px;
+        margin-bottom:10px;
+      }
+      .today ul{
+        margin-left:25px;
+        margin-top:10px;
+        line-height:25px;
+      }
+      .today h2{
+        margin-top:10px;
+        margin-left:10px;
+      }
+      .peace{
+        grid-column:1/3;
+        grid-row:3/5;
+        border-radius:10px;
+        background-color: #222;
+        color:white;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+      }
+      .peace h3{
+        font-family:cursive;
+        font-size:25px;
+        font-weight:400px;
+      }
+      .gallery{
+        width:100%;
+        grid-column:3/6;
+        grid-row:3/5;
+        border-radius:10px;
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows:repeat(2,1fr);
+        border:2px solid orange;
+        padding:10px;
+        margin-right:20px;
+        gap:10px;
+      }
+      img{
+        height:200px;
+        width:100%;
+        border-radius: 10px;
+        object-fit:cover;
+      }
+      .new{
+        grid-column:1/2;
+        border:1px solid black;
+        background-color: #222;
+        border-radius:10px;
+        color:white;
+        padding:15px;
+        justify-items:center;
+        align-items:center;
+      }
+      .new h3{
+        font-size:25px;
+        font-weight: 800;
+        margin-top:10px;
+      }
+      .new p{
+        margin-top:10px;
+        font-size: 20px;
+        line-height:40px;
+      }
+      .tasks {
+        border: 1px solid black;
+        background-color: #222;
+        grid-column:2/3;
+        border-radius:10px;
+        color:white;
+        padding:15px;
+        justify-items:center;
+        align-items:center;
+      }
+      .ui{
+        border:1px solid orangered;
+        background-color: #222;
+        grid-column:3/4;
+        border-radius:10px;
+        color:white;
+        padding:15px;
+        justify-items:center;
+        align-items:center;
+      }
+      .footer{
+        color:white;
+        background-color: rgb(255, 85, 0);
+        border-radius:15px;
+        grid-column:1/8;
+        grid-row:3/4;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        margin-bottom:10px;
+        margin-left:10px;
+        margin-right:10px;
+        font-size:15px;
+      }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h2>🌅SriCity</h2>
+            <input type="text" placeholder="Search....."/>
+            <p id="bb">
+                <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_Uaaz-meMY7ciDmbyRBMAVlafVCkpyVPFiJD9bh6Nrg&s=10"
+                alt="" id="img1"/>
+            </p>
+        </header>
+        <main class="main">
+            <aside class="side">
+                <h3>Menu</h3>
+                <ul>
+                    <li>Home</li>
+                    <li>Discover</li>
+                    <li>Gallery</li>
+                    <li>Music</li>
+                    <li>Tasks</li>
+                    <li>Profile</li>
+                    <li>Settings</li>
+                </ul>
+            </aside>
+            <section class="section">
+                <div class="welcome">
+                    <h2>Good Morning</h2>
+                    <p>Relax. Breathe. Create something amazing.</p>
+                    <p>We can build a new future in Sri City.</p>
+                    <button id="btn1">Explore</button>
+                </div>
+                <div class="weather">
+                    <h1>Weather</h1>
+                    <h1>22°C</h1>
+                    <p>Cloudy</p>
+                </div>
+                <div class="today">
+                    <h2>Today's Meetings for Investments</h2>
+                    <ul>
+                        <li>Completed:8</li>
+                        <li>Pending:2</li>
+                        <li>Focus:5h</li>
+                    </ul>
+                </div>
+                <div class="peace">
+                    <h3>"Every sunrise brings the promise in Sricity for Development"</h3>
+                </div>
+                <div class="gallery">
+                    <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bmF0dXJlfGVufDB8fDB8fHww"/>
+                    <img src="https://plus.unsplash.com/premium_photo-1675827055694-010aef2cf08f?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fG5hdHVyZXxlbnwwfHwwfHx8MA%3D%3D" alt="">
+                    <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fG5hdHVyZXxlbnwwfHwwfHx8MA%3D%3D" alt="">
+                    <img src="https://images.unsplash.com/photo-1470240731273-7821a6eeb6bd?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzV8fG5hdHVyZXxlbnwwfHwwfHx8MA%3D%3D" alt="">
+                    <img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Njd8fG5hdHVyZXxlbnwwfHwwfHx8MA%3D%3D" alt="">
+                    <img src="https://plus.unsplash.com/premium_photo-1666792562882-8bd04befec7e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTAxfHxuYXR1cmV8ZW58MHx8MHx8fDA%3D" alt="">
+                </div>
+                <div class="new">
+                    <h3>Now playing</h3>
+                    <p>Midnight Waves</p>
+                    <h5>⏮ ▶ ⏭</h5>
+                </div>
+                <div class="tasks">
+                    <h1>Tasks</h1>
+                    <ul>
+                        <li>✅Reading</li>
+                        <li>✅CSS Grid</li>
+                        <li>journal</li>
+                    </ul>
+                </div>
+                <div class="ui">
+                    <div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQCIWmoyftXvX1KBmtVAUXDRSACOgxWDI
+                        limHZ0BJgzw&s=10" style="height: 60px; width: 60px; border-radius: 50%;">
+                        <h1>Sricity</h1>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            Designed by P.Subramanyam • HTML & CSS Grid Assignment
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,453 @@
+/* =============================================
+   ANIMATIONS CSS - animation.css
+   All keyframes and animation utilities
+   ============================================= */
+
+/* =============================================
+   KEYFRAMES
+   ============================================= */
+
+/* Fade Ins */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(28px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Bounce */
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateX(-50%) translateY(0);
+    }
+
+    50% {
+        transform: translateX(-50%) translateY(-8px);
+    }
+}
+
+/* Scroll Dot */
+@keyframes scrollDot {
+    0% {
+        top: 6px;
+        opacity: 1;
+    }
+
+    100% {
+        top: 18px;
+        opacity: 0;
+    }
+}
+
+/* Rotate */
+@keyframes rotateSlow {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Pulse */
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(139, 0, 0, 0.3);
+    }
+
+    50% {
+        transform: scale(1.04);
+        box-shadow: 0 0 0 12px rgba(139, 0, 0, 0);
+    }
+}
+
+/* Shimmer (loading skeleton) */
+@keyframes shimmer {
+    0% {
+        background-position: -600px 0;
+    }
+
+    100% {
+        background-position: 600px 0;
+    }
+}
+
+/* Float */
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+/* Glow */
+@keyframes glow {
+
+    0%,
+    100% {
+        box-shadow: 0 0 12px rgba(255, 215, 0, 0.4);
+    }
+
+    50% {
+        box-shadow: 0 0 28px rgba(255, 215, 0, 0.8);
+    }
+}
+
+/* Underline expand */
+@keyframes underlineExpand {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+/* Gradient shift */
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Spin */
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Scale In */
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.85);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Slide Up */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =============================================
+   ANIMATION UTILITY CLASSES
+   ============================================= */
+
+.anim-fade-in {
+    animation: fadeIn 0.6s ease both;
+}
+
+.anim-fade-in-up {
+    animation: fadeInUp 0.7s ease both;
+}
+
+.anim-fade-in-down {
+    animation: fadeInDown 0.6s ease both;
+}
+
+.anim-fade-in-left {
+    animation: fadeInLeft 0.7s ease both;
+}
+
+.anim-fade-in-right {
+    animation: fadeInRight 0.7s ease both;
+}
+
+.anim-scale-in {
+    animation: scaleIn 0.5s ease both;
+}
+
+.anim-slide-up {
+    animation: slideUp 0.7s ease both;
+}
+
+.anim-float {
+    animation: float 4s ease-in-out infinite;
+}
+
+.anim-pulse {
+    animation: pulse 2.5s ease-in-out infinite;
+}
+
+.anim-glow {
+    animation: glow 2s ease-in-out infinite;
+}
+
+.anim-rotate-slow {
+    animation: rotateSlow 20s linear infinite;
+}
+
+/* Delay utilities */
+.delay-100 {
+    animation-delay: 0.1s;
+}
+
+.delay-200 {
+    animation-delay: 0.2s;
+}
+
+.delay-300 {
+    animation-delay: 0.3s;
+}
+
+.delay-400 {
+    animation-delay: 0.4s;
+}
+
+.delay-500 {
+    animation-delay: 0.5s;
+}
+
+.delay-600 {
+    animation-delay: 0.6s;
+}
+
+.delay-700 {
+    animation-delay: 0.7s;
+}
+
+.delay-800 {
+    animation-delay: 0.8s;
+}
+
+.delay-900 {
+    animation-delay: 0.9s;
+}
+
+/* =============================================
+   HOVER ANIMATIONS
+   ============================================= */
+
+/* Lift on hover */
+.hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+}
+
+/* Scale on hover */
+.hover-scale {
+    transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform: scale(1.04);
+}
+
+/* Glow on hover */
+.hover-glow {
+    transition: box-shadow 0.3s ease;
+}
+
+.hover-glow:hover {
+    box-shadow: 0 0 24px rgba(255, 215, 0, 0.5);
+}
+
+/* Image zoom on hover (for containers) */
+.hover-zoom-img img {
+    transition: transform 0.5s ease;
+}
+
+.hover-zoom-img:hover img {
+    transform: scale(1.08);
+}
+
+/* Button ripple */
+.btn-pulse {
+    animation: pulse 2.5s ease-in-out infinite;
+}
+
+/* Underline animation */
+.hover-underline {
+    position: relative;
+}
+
+.hover-underline::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    border-radius: 100px;
+    transition: width 0.35s ease;
+}
+
+.hover-underline:hover::after {
+    width: 100%;
+}
+
+/* =============================================
+   ANIMATED GRADIENT BACKGROUNDS
+   ============================================= */
+
+.bg-gradient-animate {
+    background: linear-gradient(-45deg, #8B0000, #c0392b, #5c0000, #a00000);
+    background-size: 400% 400%;
+    animation: gradientShift 8s ease infinite;
+}
+
+/* =============================================
+   STAGGER ANIMATION (children)
+   ============================================= */
+
+.stagger>* {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.stagger.visible>*:nth-child(1) {
+    opacity: 1;
+    transform: none;
+    transition-delay: 0.0s;
+}
+
+.stagger.visible>*:nth-child(2) {
+    opacity: 1;
+    transform: none;
+    transition-delay: 0.1s;
+}
+
+.stagger.visible>*:nth-child(3) {
+    opacity: 1;
+    transform: none;
+    transition-delay: 0.2s;
+}
+
+.stagger.visible>*:nth-child(4) {
+    opacity: 1;
+    transform: none;
+    transition-delay: 0.3s;
+}
+
+.stagger.visible>*:nth-child(5) {
+    opacity: 1;
+    transform: none;
+    transition-delay: 0.4s;
+}
+
+.stagger.visible>*:nth-child(6) {
+    opacity: 1;
+    transform: none;
+    transition-delay: 0.5s;
+}
+
+/* =============================================
+   LOADING SKELETON
+   ============================================= */
+
+.skeleton {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 600px 100%;
+    animation: shimmer 1.5s infinite;
+    border-radius: var(--radius-sm);
+}
+
+/* =============================================
+   RESPONSIVE ADJUSTMENTS FOR ANIMATIONS
+   ============================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
