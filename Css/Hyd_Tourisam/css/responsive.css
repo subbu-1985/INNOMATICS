@@ -459,7 +459,7 @@
 /* =============================================
    SMALL TABLET / LARGE MOBILE  (576px – 767px)
    ============================================= */
-@media (max-width: 767px) {
+@media (max-width: 899px) {
 
     /* ── Base ── */
     .section {
@@ -2444,5 +2444,312 @@
 
     .shop-img {
         height: 160px;
+    }
+}
+
+/* =============================================
+   RESPONSIVE SIDEBAR NAVIGATION
+   ============================================= */
+@media (max-width: 1199px) {
+    .navbar {
+        height: 68px;
+        min-height: 68px;
+        flex-wrap: nowrap;
+        padding: 0 4%;
+        gap: 12px;
+    }
+
+    /* Dim the page while the navigation drawer is open. */
+    .navbar:has(.nav-toggle-input:checked)::after {
+        content: '';
+        position: fixed;
+        inset: 68px 0 0;
+        z-index: 9998;
+        background: rgba(34, 34, 34, 0.42);
+        backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(2px);
+    }
+
+    .nav-mobile-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        order: 2;
+        width: 38px;
+        height: 38px;
+        margin-left: auto;
+        padding: 7px;
+        cursor: pointer;
+        border-radius: 6px;
+    }
+
+    .nav-mobile-toggle:hover,
+    .nav-mobile-toggle:focus-visible {
+        background: rgba(139, 0, 0, 0.08);
+        outline: none;
+    }
+
+    .nav-mobile-toggle span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: var(--primary);
+        border-radius: 2px;
+        transition: transform 0.35s ease, opacity 0.25s ease;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 68px;
+        right: 0;
+        bottom: 0;
+        z-index: 10000;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        gap: 0;
+        width: min(86vw, 340px);
+        height: calc(100vh - 68px);
+        max-height: none !important;
+        margin: 0;
+        padding: 14px 12px 24px;
+        overflow-y: auto;
+        background: rgba(255, 255, 255, 0.98);
+        border-top: 1px solid rgba(139, 0, 0, 0.1);
+        border-left: 1px solid rgba(139, 0, 0, 0.12);
+        box-shadow: -10px 0 28px rgba(0, 0, 0, 0.16);
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateX(100%);
+        transition: transform 0.35s ease;
+    }
+
+    .nav-links::before {
+        content: 'Explore Hyderabad';
+        display: block;
+        padding: 4px 16px 12px;
+        color: var(--primary);
+        font-family: var(--font-head);
+        font-size: 1.15rem;
+        font-weight: 700;
+        border-bottom: 1px solid var(--border);
+        margin-bottom: 7px;
+    }
+
+    .nav-links li,
+    .nav-links li a {
+        width: 100%;
+    }
+
+    .nav-links li a {
+        display: block;
+        padding: 10px 16px;
+        font-size: 0.9rem;
+        line-height: 1.35;
+        white-space: nowrap;
+        border-radius: 8px;
+    }
+
+    .nav-links li a:hover,
+    .nav-links li a.active {
+        color: var(--primary);
+        background: linear-gradient(90deg, rgba(139, 0, 0, 0.1), rgba(255, 215, 0, 0.08));
+        transform: translateX(3px);
+    }
+
+    .nav-links a::after {
+        left: 16px;
+        bottom: 5px;
+        transform: none;
+    }
+
+    .nav-links::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    .nav-links::-webkit-scrollbar-thumb {
+        background: rgba(139, 0, 0, 0.35);
+        border-radius: 10px;
+    }
+
+    .nav-toggle-input:checked ~ .nav-links {
+        transform: translateX(0);
+    }
+
+    body:has(.nav-toggle-input:checked) {
+        overflow: hidden;
+    }
+
+    .nav-toggle-input:checked ~ .nav-mobile-toggle span:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+
+    .nav-toggle-input:checked ~ .nav-mobile-toggle span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .nav-toggle-input:checked ~ .nav-mobile-toggle span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+
+    .nav-logo-text strong {
+        font-size: clamp(0.82rem, 2.2vw, 1.05rem);
+    }
+
+    .nav-logo-text span {
+        font-size: 0.58rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 0 3%;
+    }
+
+    .nav-logo-icon,
+    .nav-logo-icon img {
+        width: 44px;
+        height: 44px;
+    }
+
+    .nav-logo {
+        gap: 6px;
+    }
+
+    .nav-logo-text span {
+        display: none;
+    }
+
+    .nav-logo-text strong {
+        font-size: 0.88rem;
+        white-space: nowrap;
+    }
+
+    .nav-links {
+        width: min(88vw, 320px);
+    }
+
+    .nav-links {
+        padding: 10px 10px 16px;
+    }
+
+    .nav-links::before {
+        padding: 2px 14px 8px;
+        font-size: 1rem;
+        margin-bottom: 3px;
+    }
+
+    .nav-links li a {
+        padding: 8px 14px;
+        font-size: 0.84rem;
+    }
+}
+
+/* =============================================
+    MOBILE HERO CIRCLES
+    Keeps the decorative images clear of the text.
+    ============================================= */
+@media (max-width: 899px) {
+    .hero {
+        min-height: 620px;
+        align-items: flex-start;
+        padding-top: 112px;
+    }
+
+    .hero-circle-1 {
+        width: 245px;
+        height: 245px;
+        top: -58px;
+        right: -82px;
+        border-width: 1px;
+        opacity: 0.72;
+    }
+
+    .hero-circle-1 img {
+        animation: mobileCircleDrift 12s ease-in-out infinite alternate;
+    }
+
+    .hero-circle-mini {
+        width: 142px;
+        height: 142px;
+        top: 18px;
+        right: -18px;
+        opacity: 0.82;
+        animation: mobileCircleRotate 28s linear infinite;
+    }
+
+    .hero-content {
+        width: 100%;
+        padding: 0 6%;
+    }
+
+    .hero-title,
+    .hero-title-sub,
+    .hero-desc,
+    .hero-actions {
+        position: relative;
+        z-index: 4;
+    }
+
+    .hero-title {
+        max-width: 330px;
+    }
+
+    .hero-desc {
+        max-width: 520px;
+    }
+}
+
+@keyframes mobileCircleDrift {
+    from {
+        transform: scale(1) rotate(-3deg);
+    }
+
+    to {
+        transform: scale(1.06) rotate(3deg);
+    }
+}
+
+@keyframes mobileCircleRotate {
+    from {
+        transform: rotate(0deg) translateY(0);
+    }
+
+    50% {
+        transform: rotate(180deg) translateY(5px);
+    }
+
+    to {
+        transform: rotate(360deg) translateY(0);
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        min-height: 590px;
+        padding-top: 100px;
+    }
+
+    .hero-circle-1 {
+        width: 205px;
+        height: 205px;
+        top: -45px;
+        right: -76px;
+    }
+
+    .hero-circle-mini {
+        width: 116px;
+        height: 116px;
+        top: 22px;
+        right: -14px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hero-circle-1 img,
+    .hero-circle-mini {
+        animation: none;
     }
 }

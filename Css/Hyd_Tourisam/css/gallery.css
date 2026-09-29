@@ -252,9 +252,7 @@
     background: linear-gradient(135deg, #556b00, #7a9a00);
 }
 
-/* =============================================
-   GALLERY PAGE FILTER STYLES
-   ============================================= */
+/* GALLERY PAGE FILTER STYLES*/
 
 .gallery-filter-radio {
     position: absolute;
@@ -386,9 +384,7 @@
     transform: scale(1.05);
 }
 
-/* =============================================
-   GALLERY STATS ROW
-   ============================================= */
+/* GALLERY STATS ROW */
 
 .gallery-stats {
     display: flex;

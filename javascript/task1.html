@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathematical Operations</title>
+
+     <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 30px;
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            color: #222;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #1f3c88;
+            text-align: center;    
+        }
+        .section {
+            max-width: 650px;
+            margin: 0 auto 30px;
+            padding: 25px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        label {
+            display: inline-block;
+            width: 190px;
+            margin-bottom: 12px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 250px;
+            padding: 10px;
+            margin-bottom: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 15px;
+            outline: none;
+        }
+    </style> 
+</head>
+
+<body>
+    <div class="section">
+        <h1>Adding the Two Numbers</h1>
+        <label for="">Enter the number1:</label>
+        <input type="text" placeholder="Number" id="n1"><br>
+        <label for="">Enter the number2:</label>
+        <input type="text" placeholder="Number" id="n2"><br>
+        <label for="">Result:</label>
+        <input type="text" placeholder="Result" id="res"><br>
+        <button onclick="addTwo()">Add</button>
+    </div>
+
+    <div class="section">
+        <h1>Average of the Three Numbers</h1>
+        <label for="">Enter the number1:</label>
+        <input type="text" placeholder="Number" id="a"><br>
+        <label for="">Enter the number2:</label>
+        <input type="text" placeholder="Number" id="b"><br>
+        <label for="">Enter the number3:</label>
+        <input type="text" placeholder="Number" id="c"><br>
+        <label for="">Result:</label>
+        <input type="text" placeholder="Result" id="result"><br>
+        <button onclick="avg()">Average</button>
+    </div>
+
+    <div class="section">
+        <h1>Sum of First n Natural Numbers</h1>
+        <label for="">Enter the value:</label>
+        <input type="text" placeholder="Enter the number" id="x"><br>
+        <label for="">Result:</label>
+        <input type="text" placeholder="Result" id="output"><br>
+        <button onclick="sum()">Submit</button>
+    </div>
+
+    <div class="section">
+        <h1>Average of First n Natural Numbers</h1>
+        <label for="">Enter the value:</label>
+        <input type="text" placeholder="Enter the number" id="y"><br>
+        <label for="">Result:</label>
+        <input type="text" placeholder="Result" id="output1"><br>
+        <button onclick="avgofn()">Submit</button>
+    </div>
+
+    <div class="section">
+        <h1>Missing Angle in Triangle</h1>
+        <label for="">First angle:</label>
+        <input type="text" placeholder="Enter angle" id="a1"><br>
+        <label for="">Second angle:</label>
+        <input type="text" placeholder="Enter angle" id="b1"><br>
+        <label for="">Missing angle:</label>
+        <input type="text" placeholder="Third angle" id="c1"><br>
+        <button onclick="missing_angle()">Result</button>
+    </div>
+
+    <div class="section">
+        <h1>Profit Percentage</h1>
+        <label for="">Selling Price:</label>
+        <input type="text" placeholder="Enter the price" id="sp"><br>
+        <label for="">Cost Price:</label>
+        <input type="text" placeholder="Enter the price" id="cp"><br>
+        <label for="">Profit Percentage:</label>
+        <input type="text" placeholder="Result" id="p"><br>
+        <button onclick="per()">Submit</button>
+    </div>
+
+    <div class="section">
+        <h1>Simple Interest</h1>
+        <label for="">Principal Amount:</label>
+        <input type="text" placeholder="Enter the value" id="pa"><br>
+        <label for="">Time:</label>
+        <input type="text" placeholder="Enter the value" id="t"><br>
+        <label for="">Rate of Interest:</label>
+        <input type="text" placeholder="Enter the value" id="r"><br>
+        <label for="">Simple Interest:</label>
+        <input type="text" placeholder="Enter the value" id="si"><br>
+        <button onclick="simpleinterest()">Submit</button>
+    </div>
+
+    <script type="text/javascript" src="task1.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n1=+prompt("Enter n1:");
+        let n2=+prompt("Enter n2:");
+        let operation=prompt("Enter operation (+, -, *, /, %):");
+        switch (operation){
+            case "+":
+              document.write("Addtional: "+(n1+n2));
+              break;
+            case "-":
+              document.write("Subtraction: "+(n1-n2));
+              break;
+            case "*":
+              document.write("Multiplication: "+(n1*n2));
+              break;
+            case "/":
+              document.write("Division: "+(n1/n2));
+              break;
+            case "%":
+              document.write("Modulus: "+(n1%n2));
+              break;
+            default:
+              document.write("Invalid Input");
+        }
+    </script>
+</body>
+</html>

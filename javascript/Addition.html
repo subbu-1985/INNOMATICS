@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        body{
+            min-height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background:#f0f0f0;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding:20px;
+        }
+        .box{
+            width:340px;
+            background:#fff;
+            padding:25px;
+            border-radius:10px;
+            box-shadow:0 0 15px rgba(0,0,0,0.15);
+        }
+        h1{
+            text-align:center;
+            margin-bottom:20px;
+            color:#333;
+        }
+        .field{
+            display:flex;
+            flex-direction:column;
+            gap:10px;
+        }
+        label{
+            color:#0077cc;
+            font-weight:bold;
+        }
+        input{
+            padding:10px;
+            font-size:16px;
+            border:1px solid #ccc;
+            border-radius:5px;
+        }
+        input:focus{
+            outline:none;
+            border-color:#0099ff;
+            box-shadow:0 0 5px rgba(0,153,255,.4);
+        }
+        .op{
+            margin-top:20px;
+            display:flex;
+            flex-wrap:wrap;
+            gap:10px;
+        }
+        .op button{
+            flex:1 1 30%;
+            padding:10px;
+            border:none;
+            border-radius:5px;
+            background:skyblue;
+            color:white;
+            cursor:pointer;
+            font-size:15px;
+            transition:.3s;
+        }
+        .op button:hover{
+            background:deepskyblue;
+            transform:translateY(-2px);
+        }
+        .clear{
+            background:tomato !important;
+        }
+        .clear:hover{
+            background:orangered !important;
+        }
+        @media(max-width:400px){
+            .box{
+                width:100%;
+            }
+            .op button{
+                flex:1 1 45%;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <h1>Calculator</h1>
+    <div class="field">
+        <label for="n1">Enter Number 1</label>
+        <input type="number" id="n1" placeholder="Enter Number 1">
+        <label for="n2">Enter Number 2</label>
+        <input type="number" id="n2" placeholder="Enter Number 2">
+        <label for="res">Result</label>
+        <input type="text" id="res" placeholder="Result" readonly>
+    </div>
+    <div class="op">
+        <button data-op="add">Add (+)</button>
+        <button data-op="sub">Sub (-)</button>
+        <button data-op="mul">Mul (×)</button>
+        <button data-op="div">Div (÷)</button>
+        <button data-op="mod">Mod (%)</button>
+        <button data-op="power">Power (^)</button>
+        <button data-op="clear" class="clear">Clear</button>
+    </div>
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+    const n1 = document.getElementById("n1");
+    const n2 = document.getElementById("n2");
+    const res = document.getElementById("res");
+    const buttons = document.querySelectorAll("[data-op]");
+    function parseValue(value){
+        return Number(value);
+    }
+    function setResult(value){
+        res.value = value;
+    }
+    function calculate(operation){
+        const num1 = parseValue(n1.value);
+        const num2 = parseValue(n2.value);
+        if(operation !== "clear" && (n1.value==="" || n2.value==="")){
+            alert("Please enter both numbers.");
+            return;
+        }
+        let result;
+        switch(operation){
+            case "add":
+                result = num1 + num2;
+                break;
+            case "sub":
+                result = num1 - num2;
+                break;
+            case "mul":
+                result = num1 * num2;
+                break;
+            case "div":
+                if(num2 === 0){
+                    alert("Cannot divide by zero.");
+                    return;
+                }
+                result = num1 / num2;
+                break;
+            case "mod":
+                if(num2 === 0){
+                    alert("Cannot perform modulus by zero.");
+                    return;
+                }
+                result = num1 % num2;
+                break;
+            case "power":
+                result = Math.pow(num1, num2);
+                break;
+            case "clear":
+                n1.value = "";
+                n2.value = "";
+                res.value = "";
+                n1.focus();
+                return;
+            default:
+                alert("Invalid Operation");
+                return;
+        }
+        setResult(result);
+    }
+    buttons.forEach(function(button){
+        button.addEventListener("click", function(){
+            const operation = this.dataset.op;
+            calculate(operation);
+        });
+    });
+});
+</script>
+</body>
+</html>

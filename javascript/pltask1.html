@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nested Loop Patterns</title>
+</head>
+<body>
+<script>
+
+// Pattern 1
+document.write("<h3>Pattern 1</h3>");
+for (let i = 1; i <= 5; i++) {
+    for (let j = 1; j <= i; j++) {
+        document.write(i);
+    }
+    document.write("<br>");
+}
+
+// Pattern 2
+document.write("<h3>Pattern 2</h3>");
+for (let i = 5; i >= 1; i--) {
+    for (let j = 5; j >= i; j--) {
+        document.write(i);
+    }
+    document.write("<br>");
+}
+
+// Pattern 3
+document.write("<h3>Pattern 3</h3>");
+for (let i = 1; i <= 5; i++) {
+    for (let j = i; j >= 1; j--) {
+        document.write(j);
+    }
+    document.write("<br>");
+}
+
+
+// Pattern 4
+document.write("<h3>Pattern 4</h3>");
+for (let i = 5; i >= 1; i--) {
+    for (let j = i; j <= 5; j++) {
+        document.write(j);
+    }
+    document.write("<br>");
+}
+
+
+// Pattern 5
+document.write("<h3>Pattern 5</h3>");
+for (let i = 5; i >= 1; i--) {
+    for (let j = 5; j >= 6 - i; j--) {
+        document.write(j);
+    }
+    document.write("<br>");
+}
+
+
+// Pattern 6
+document.write("<h3>Pattern 6</h3>");
+for (let i = 5; i >= 1; i--) {
+    for (let j = 1; j <= i; j++) {
+        document.write(j);
+    }
+    document.write("<br>");
+}
+
+
+// Pattern 7
+document.write("<h3>Pattern 7</h3>");
+for (let i = 1; i <= 5; i++) {
+    for (let j = i; j <= 5; j++) {
+        document.write(j);
+    }
+    document.write("<br>");
+}
+
+
+// Pattern 8
+document.write("<h3>Pattern 8</h3>");
+for (let i = 5; i >= 1; i--) {
+    for (let j = i; j >= 1; j--) {
+        document.write(j);
+    }
+    document.write("<br>");
+}
+
+
+// Pattern 9
+document.write("<h3>Pattern 9</h3>");
+for (let i = 1; i <= 5; i++) {
+
+    for (let j = 5; j > i; j--) {
+        document.write("&nbsp;&nbsp;");
+    }
+
+    for (let j = 1; j <= i; j++) {
+        document.write(j);
+    }
+
+    document.write("<br>");
+}
+
+
+// Pattern 10
+document.write("<h3>Pattern 10</h3>");
+for (let i = 5; i >= 1; i--) {
+    for (let j = 5; j > i; j--) {
+        document.write("&nbsp;&nbsp;");
+    }
+    for (let j = i; j <= 5; j++) {
+        document.write(j);
+    }
+    document.write("<br>");
+}
+
+</script>
+
+</body>
+</html>
